@@ -1,0 +1,405 @@
+{
+    "Universidades": {
+        "id": 1,
+        "nombreEus": "Euskal Herriko Unibertsitatea",
+        "siglasEus": "EHU",
+        "nombreEsp": "Universidad del Pais Vasco",
+        "siglasEsp": "UPV",
+        "estudios": [
+            {
+                "id": 1,
+                "nombreEus": "Grados",
+                "nombreEsp": "Grados",
+                "campus": [
+                    {
+                        "id": 1,
+                        "nombreEus": "Araba",
+                        "nombreEsp": "Alava",
+                        "centros": [
+                            {
+                                "id": 1,
+                                "nombreEus": "Vitoria-Gasteizko Ingeniaritza Eskola",
+                                "nombreEsp": "Escuela de Ingeniería de Vitoria-Gasteiz",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Gradu Bikoitza Ingeniaritza Mekanikoa + Industria Elektronikaren eta Automatikaren Ingeniaritza", "nombreEsp": "Doble Grado en Ingeniería Mecánica + Ingeniería Electrónica Industrial y Automática"},
+                                    {"id": 2, "nombreEus": "Gradu bikoitza Ingeniaritza Mekanikoa + Enpresen Administrazio eta Zuzendaritza", "nombreEsp": "Doble Grado en Ingeniería Mecánica y en Administración y Dirección de Empresas"},
+                                    {"id": 3, "nombreEus": "Gradu bikoitza Enpresen administrazio eta zuzendaritza + Kudeaketaren eta Informazio Sistemen Informatikaren Ingeniaritzaa", "nombreEsp": "Doble Grado en Administración y Dirección de Empresas y en Ingeniería Informática de Gestión y Sistemas de Información"},
+                                    {"id": 4, "nombreEus": "Automobilgintzaren Ingeniaritzako Gradua (duala)", "nombreEsp": "Grado en Ingeniería en Automoción (dual)"},
+                                    {"id": 5, "nombreEus": "Industria Elektronikoren eta Automatikaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Electrónica Industrial y Automática"},
+                                    {"id": 6, "nombreEus": "Kudeaketaren eta Informazio Sistemen Informatikaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Informática de Gestión y Sistemas de Información"},
+                                    {"id": 7, "nombreEus": "Ingeniaritza Mekanikoko Gradua", "nombreEsp": "Grado en Ingeniería Mecánica"},
+                                    {"id": 8, "nombreEus": "Industria Kimikaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Química Industrial"}
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "nombreEus": "Ekonomia eta Enpresa Fakultatea",
+                                "nombreEsp": "Facultad de Economía y Empresa",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Enpresen Administrazio eta Zuzendaritzako Gradua (Vitoria-Gasteiz)", "nombreEsp": "Administración y Dirección de Empresas (Vitoria-Gasteiz)"},
+                                    {"id": 2, "nombreEus": "Gradu Bikoitza: Enpresen Administrazio eta Zuzendaritza + Kudeaketaren eta Informazio Sistemen Informatikaren Ingeniaritza (Vitoria-Gasteiz)", "nombreEsp": "Doble Grado en Administración y Dirección de Empresas + Ingeniería Informática de Gestión y Sistemas de Información (Vitoria-Gasteiz)"},
+                                    {"id": 3, "nombreEus": "Gradu Bikoitza: Ingeniaritza Mekanikoa + Enpresen Administrazio eta Zuzendaritza (Vitoria-Gasteiz)", "nombreEsp": "Doble Grado en Ingeniería Mecánica + Administración y Dirección de Empresas (Vitoria-Gasteiz)"}
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "nombreEus": "Hezkuntza eta Kirol Fakultatea",
+                                "nombreEsp": "Facultad de Educación y Deporte",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Haur Hezkuntzako Gradua", "nombreEsp": "Grado en Educación Infantil"},
+                                    {"id": 2, "nombreEus": "Lehen Hezkuntzako Gradua", "nombreEsp": "Grado en Educación Primaria"},
+                                    {"id": 3, "nombreEus": "Jarduera Fisikoaren eta Kirolaren Zientzietako Gradua", "nombreEsp": "Grado en Ciencias de la Actividad Física y el Deporte"},
+                                    {"id": 4, "nombreEus": "Lehen Hezkuntzako Gradua + Jarduera Fisikoaren eta Kirolaren Zientzietako Gradua", "nombreEsp": "Grado en Educación Primaria + Grado en Ciencias de la Actividad Física y Deporte"}
+                                ]
+                            },
+                            {
+                                "id": 4,
+                                "nombreEus": "Farmazia Fakultatea",
+                                "nombreEsp": "Facultad de Farmacia",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Elikagaien Zientzia eta Teknologiako Gradua", "nombreEsp": "Grado en Ciencia y Tecnología de los Alimentos"},
+                                    {"id": 2, "nombreEus": "Ingurumen Zientzietako Gradua", "nombreEsp": "Grado en Ciencias Ambientales"},
+                                    {"id": 3, "nombreEus": "Farmaziako Gradua", "nombreEsp": "Grado en Farmacia"},
+                                    {"id": 4, "nombreEus": "Giza Nutrizioko eta Dietetikako Gradua", "nombreEsp": "Grado en Nutrición Humana y Dietética"},
+                                    {"id": 5, "nombreEus": "Gradu Bikoitza: Farmazia + Giza Nutrizioa eta Dietetika", "nombreEsp": "Doble Grado en Farmacia + Nutrición Humana y Dietética"}
+                                ]
+                            },
+                            {
+                                "id": 5,
+                                "nombreEus": "Letren Fakultatea",
+                                "nombreEsp": "Facultad de Letras",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Euskal Ikasketetako Gradua", "nombreEsp": "Grado en Estudios Vascos"},
+                                    {"id": 2, "nombreEus": "Ingeles Ikasketetako Gradua", "nombreEsp": "Grado en Estudios Ingleses"},
+                                    {"id": 3, "nombreEus": "Itzulpengintza eta Interpretazioko Gradua", "nombreEsp": "Grado en Traducción e Interpretación"},
+                                    {"id": 4, "nombreEus": "Historiako Gradua", "nombreEsp": "Grado en Historia"},
+                                    {"id": 5, "nombreEus": "Artearen Historiako Gradua", "nombreEsp": "Grado en Historia del Arte"},
+                                    {"id": 6, "nombreEus": "Geografiako eta Lurralde Antolakuntzako Gradua", "nombreEsp": "Grado en Geografía y Ordenación del Territorio"},
+                                    {"id": 7, "nombreEus": "Filologiako Gradua (Alemana, Frantsesa, Klasikoa eta Hispanikoa)", "nombreEsp": "Grado en Filología (Alemana, Francesa, Clásica e Hispánica)"}
+                                ]
+                            },
+                            {
+                                "id": 6,
+                                "nombreEus": "Medikuntza eta Erizaintza Fakultatea",
+                                "nombreEsp": "Facultad de Medicina y Enfermería",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Erizaintzako Gradua", "nombreEsp": "Grado en Enfermería"},
+                                    {"id": 2, "nombreEus": "Fisioterapiako Gradua", "nombreEsp": "Grado en Fisioterapia"},
+                                    {"id": 3, "nombreEus": "Medikuntzako Gradua", "nombreEsp": "Grado en Medicina"},
+                                    {"id": 4, "nombreEus": "Odontologiako Gradua", "nombreEsp": "Grado en Odontología"}
+                                ]
+                            },
+                            {
+                                "id": 7,
+                                "nombreEus": "Lan Harreman eta Gizarte Langintza Fakultatea",
+                                "nombreEsp": "Facultad de Relaciones Laborales y Trabajo Social",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Gizarte Langintzako Gradua", "nombreEsp": "Grado en Trabajo Social"},
+                                    {"id": 2, "nombreEus": "Lan Harreman eta Giza Baliabideetako Gradua", "nombreEsp": "Grado en Relaciones Laborales y Recursos Humanos"},
+                                    {"id": 3, "nombreEus": "Gradu Bikoitza: Negozioen Kudeaketa + Lan Harreman eta Giza Baliabideak", "nombreEsp": "Doble Grado en Gestión de Negocios + Relaciones Laborales y Recursos Humanos"}
+                                ],
+                                "postgrados": []
+                            },
+                            {
+                                "id": 8,
+                                "nombreEus": "Arabako Esperientzia Gelak",
+                                "nombreEsp": "Aulas de la Experiencia de Álava",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Giza Zientzietako Unibertsitate Titulua", "nombreEsp": "Título Universitario en Ciencias Humanas"}
+                                ]
+                            },
+                            {
+                                "id": 9,
+                                "nombreEus": "Gasteizko Erizaintzako Unibertsitate Eskola",
+                                "nombreEsp": "Escuela Universitaria de Enfermería de Vitoria-Gasteiz",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Erizaintzako gradua", "nombreEsp": "Grado en enfermería"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "nombreEus": "Bizkaia",
+                        "nombreEsp": "Bizkaia",
+                        "centros": [
+                            {
+                                "id": 1,
+                                "nombreEus": "Bilboko Ingeniaritza Eskola",
+                                "nombreEsp": "Escuela de Ingeniería de Bilbao",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Ingurumen Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Ambiental"},
+                                    {"id": 2, "nombreEus": "Industria Antolakuntzaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería en Organización Industrial"},
+                                    {"id": 3, "nombreEus": "Industria Teknologiaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería en Tecnología Industrial"},
+                                    {"id": 4, "nombreEus": "Ingeniaritza Elektrikoko Gradua", "nombreEsp": "Grado en Ingeniería Eléctrica"},
+                                    {"id": 5, "nombreEus": "Industria Elektronikaren eta Automatikaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Electrónica Industrial y Automática"},
+                                    {"id": 6, "nombreEus": "Ingeniaritza Mekanikoko Gradua", "nombreEsp": "Grado en Ingeniería Mecánica"},
+                                    {"id": 7, "nombreEus": "Kudeaketaren eta Informazio Sistemen Informatikaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Informática de Gestión y Sistemas de Información"},
+                                    {"id": 8, "nombreEus": "Telekomunikazio Teknologiaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería en Tecnología de Telecomunicación"},
+                                    {"id": 9, "nombreEus": "Itsasketako Gradua", "nombreEsp": "Grado en Marina"},
+                                    {"id": 10, "nombreEus": "Nautika eta Itsas Garraioko Gradua", "nombreEsp": "Grado en Náutica y Transporte Marítimo"},
+                                    {"id": 11, "nombreEus": "Ingeniaritza Zibileko Gradua", "nombreEsp": "Grado en Ingeniería Civil"},
+                                    {"id": 12, "nombreEus": "Ingeniaritza Biomedikoko Gradua", "nombreEsp": "Grado en Ingeniería Biomédica"}
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "nombreEus": "Arte Ederren Fakultatea",
+                                "nombreEsp": "Facultad de Bellas Artes",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Arteko Gradua", "nombreEsp": "Grado en Arte"},
+                                    {"id": 2, "nombreEus": "Kultura Ondareen Zaintza eta Zaharberritzeari buruzko Gradua", "nombreEsp": "Grado en Conservación y Restauración de Bienes Culturales"},
+                                    {"id": 3, "nombreEus": "Sorkuntza eta Diseinuko Gradua", "nombreEsp": "Grado en Creación y Diseño"},
+                                    {"id": 4, "nombreEus": "Graduen aurkezpena", "nombreEsp": "Presentación de los grados"},
+                                    {"id": 5, "nombreEus": "Gradu amaierako lana", "nombreEsp": "Trabajo fin de grado"}
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "nombreEus": "Zientzia eta Teknologia Fakultatea",
+                                "nombreEsp": "Facultad de Ciencia y Tecnología",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Biologiako Gradua", "nombreEsp": "Grado en Biología"},
+                                    {"id": 2, "nombreEus": "Biokimika eta Biologia Molekularreko Gradua", "nombreEsp": "Grado en Bioquímica y Biología Molecular"},
+                                    {"id": 3, "nombreEus": "Bioteknologiako Gradua", "nombreEsp": "Grado en Biotecnología"},
+                                    {"id": 4, "nombreEus": "Fisikako Gradua", "nombreEsp": "Grado en Física"},
+                                    {"id": 5, "nombreEus": "Geologiako Gradua", "nombreEsp": "Grado en Geología"},
+                                    {"id": 6, "nombreEus": "Ingeniaritza Elektronikoko Gradua", "nombreEsp": "Grado en Ingeniería Electrónica"},
+                                    {"id": 7, "nombreEus": "Ingeniaritza Kimikoko Gradua", "nombreEsp": "Grado en Ingeniería Química"},
+                                    {"id": 8, "nombreEus": "Kimikako Gradua", "nombreEsp": "Grado en Química"},
+                                    {"id": 9, "nombreEus": "Matematikako Gradua", "nombreEsp": "Grado en Matemáticas"},
+                                    {"id": 10, "nombreEus": "Fisika eta Ingeniaritza Elektronikoko Gradu bikoitza", "nombreEsp": "Doble Grado de Física e Ingenieria Electrónica"}
+                                ]
+                            },
+                            {
+                                "id": 4,
+                                "nombreEus": "Gizarte eta Komunikazio Zientzien Fakultatea",
+                                "nombreEsp": "Facultad de Ciencias Sociales y de la Comunicación",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Ikus-Entzunezko Komunikazioko Gradua", "nombreEsp": "Grado en Comunicación Audiovisual"},
+                                    {"id": 2, "nombreEus": "Kazetaritzako Gradua", "nombreEsp": "Grado en Periodismo"},
+                                    {"id": 3, "nombreEus": "Publizitateko eta Harreman Publikoetako Gradua", "nombreEsp": "Grado en Publicidad y Relaciones Públicas"},
+                                    {"id": 4, "nombreEus": "Soziologiako Gradua", "nombreEsp": "Grado en Sociología"},
+                                    {"id": 5, "nombreEus": "Politika Zientzia eta Kudeaketa Publikoko Gradua", "nombreEsp": "Grado en Ciencia Política y Gestión Pública"},
+                                    {"id": 6, "nombreEus": "Gradu Bikoitza: Ikus-entzunezko Komunikazioa + Kazetaritza", "nombreEsp": "Doble Grado en Comunicación Audiovisual + Periodismo"},
+                                    {"id": 7, "nombreEus": "Gradu Bikoitza: Kazetaritza + Publizitatea eta Harreman Publikoak", "nombreEsp": "Doble Grado en Periodismo + Publicidad y Relaciones Públicas"},
+                                    {"id": 8, "nombreEus": "Gradu Bikoitza: Politika Zientzia eta Kudeaketa Publikoa + Soziologia", "nombreEsp": "Doble Grado en Ciencia Política y Gestión Pública + Sociología"}
+                                ]
+                            },
+                            {
+                                "id": 5,
+                                "nombreEus": "Zuzenbide Fakultatea",
+                                "nombreEsp": "Facultad de Derecho",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Zuzenbideko Gradua", "nombreEsp": "Grado en Derecho"}
+                                ]
+                            },
+                            {
+                                "id": 6,
+                                "nombreEus": "Ekonomia eta Enpresa Fakultatea",
+                                "nombreEsp": "Facultad de Economía y Empresa",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Enpresen Administrazio eta Zuzendaritzako Gradua. Bilbao-Sarriko (Egoitza)", "nombreEsp": "Grado en Administración y Dirección de Empresas. Bilbao-Sarriko (Sede)"},
+                                    {"id": 2, "nombreEus": "Ekonomiako Gradua (Bilbao-Sarriko)", "nombreEsp": "Grado en Economía (Bilbao-Sarriko)"},
+                                    {"id": 3, "nombreEus": "Zerga Sistemako eta Administrazio Publikoko Gradua (Bilbao-Sarriko)", "nombreEsp": "Grado en Fiscalidad y Administración Pública (Bilbao-Sarriko)"},
+                                    {"id": 4, "nombreEus": "Negozioen Kudeaketako Gradua (Bilbao-Elkano)", "nombreEsp": "Grado en Gestión de Negocios (Bilbao-Elkano)"},
+                                    {"id": 5, "nombreEus": "Marketineko Gradua (Bilbao-Sarriko)", "nombreEsp": "Grado en Marketing (Bilbao-Sarriko)"},
+                                    {"id": 6, "nombreEus": "Gradu Bikoitza: Enpresen Administrazio eta Zuzendaritza + Zuzenbidea. Bilbao-Sarriko (Egoitza)", "nombreEsp": "Doble Grado: Administración y Dirección de Empresas + Derecho. Bilbao-Sarriko (Sede)"},
+                                    {"id": 7, "nombreEus": "Gradu Bikoitza: Negozioen Kudeaketa + Lan Harreman eta Giza Baliabideak", "nombreEsp": "Doble Grado en Gestión de Negocios + Relaciones Laborales y Recursos Humanos"},
+                                    {"id": 8, "nombreEus": "Double Bachelor's degree in Business and Economics (Bilbao-Sarriko)", "nombreEsp": "Double Bachelor's degree in Business and Economics (Bilbao-Sarriko)"}
+                                ]
+                            },
+                            {
+                                "id": 7,
+                                "nombreEus": "Bilboko Hezkuntza Fakultatea",
+                                "nombreEsp": "Facultad de Educación de Bilbao",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Haur Hezkuntza", "nombreEsp": "Educación Infantil"},
+                                    {"id": 2, "nombreEus": "Lehen Hezkuntza", "nombreEsp": "Educación Primaria"},
+                                    {"id": 3, "nombreEus": "Gizarte Hezkuntza", "nombreEsp": "Educación Social"}
+                                ]
+                            },
+                            {
+                                "id": 8,
+                                "nombreEus": "Medikuntza eta Erizaintza Fakultatea",
+                                "nombreEsp": "Facultad de Medicina y Enfermería",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Erizaintzako Gradua", "nombreEsp": "Grado en Enfermería"},
+                                    {"id": 2, "nombreEus": "Fisioterapiako Gradua", "nombreEsp": "Grado en Fisioterapia"},
+                                    {"id": 3, "nombreEus": "Medikuntzako Gradua", "nombreEsp": "Grado en Medicina"},
+                                    {"id": 4, "nombreEus": "Odontologiako Gradua", "nombreEsp": "Grado en Odontología"}
+                                ]
+                            },
+                            {
+                                "id": 9,
+                                "nombreEus": "Lan Harreman eta Gizarte Langintza Fakultatea",
+                                "nombreEsp": "Facultad de Relaciones Laborales y Trabajo Social",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Gizarte Langintzako Gradua", "nombreEsp": "Grado en Trabajo Social"},
+                                    {"id": 2, "nombreEus": "Lan Harreman eta Giza Baliabideetako Gradua", "nombreEsp": "Grado en Relaciones Laborales y Recursos Humanos"},
+                                    {"id": 3, "nombreEus": "Gradu Bikoitza: Negozioen Kudeaketa + Lan Harreman eta Giza Baliabideak", "nombreEsp": "Doble Grado en Gestión de Negocios + Relaciones Laborales y Recursos Humanos"}
+                                ]
+                            },
+                            {
+                                "id": 10,
+                                "nombreEus": "Bizkaiko Esperientzia Gelak",
+                                "nombreEsp": "Aulas de la Experiencia de Bizkaia",
+                                "grados": [
+                                    {"id": 1, "nombreEus": "Giza Zientzietako unibertsitate titulua", "nombreEsp": "Título universitario en Ciencias Humanas"}
+                                ]
+                            },
+                            {
+                                "id": 11,
+                                "nombreEus": "Bilboko Merkataritza Ganberako Unibertsitate Eskola",
+                                "nombreEsp": "Escuela Universitaria Cámara de Comercio de Bilbao",
+                                "grados": [
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "nombreEus": "Gipuzkoa",
+                        "nombreEsp": "Gipuzkoa",
+                        "centros":  [
+                            {
+                                "id": 1,
+                                "nombreEus": "Gipuzkoako Ingeniaritza Eskola",
+                                "nombreEsp": "Escuela de Ingeniería de Gipuzkoa",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Arkitektura Teknikoko Gradua", "nombreEsp": "Grado en Arquitectura Técnica"},
+                                    {"id": 2, "nombreEus": "Ingeniaritza Zibileko Gradua", "nombreEsp": "Grado en Ingeniería Civil"},
+                                    {"id": 3, "nombreEus": "Ingeniaritza Elektrikoko Gradua", "nombreEsp": "Grado en Ingeniería Eléctrica"},
+                                    {"id": 4, "nombreEus": "Industria Elektronikaren eta Automatikaren Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Electrónica Industrial y Automática"},
+                                    {"id": 5, "nombreEus": "Ingeniaritza Mekanikoko Gradua", "nombreEsp": "Grado en Ingeniería Mecánica"},
+                                    {"id": 6, "nombreEus": "Energia Berriztagarrien Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería de Energías Renovables"},
+                                    {"id": 7, "nombreEus": "Gradu Bikoitza: Ingeniaritza Mekanikoa + Industria Elektronikaren eta Automatikaren Ingeniaritza", "nombreEsp": "Doble Grado: Ingeniería Mecánica + Ingeniería Electrónica Industrial y Automática"},
+                                    {"id": 8, "nombreEus": "Gradu Bikoitza: Ingeniaritza Zibila + Arkitektura Teknikoa", "nombreEsp": "Doble Grado: Ingeniería Civil + Arquitectura Técnica"}
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "nombreEus": "Arkitektura Goi Eskola Teknikoa",
+                                "nombreEsp": "Escuela Técnica Superior de Arquitectura",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Arkitekturaren Oinarrietako Gradua", "nombreEsp": "Grado en Fundamentos de Arquitectura"}
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "nombreEus": "Zuzenbide Fakultatea",
+                                "nombreEsp": "Facultad de  Derecho",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Zuzenbide gradua", "nombreEsp": "Grado en Derecho"},
+                                    {"id": 2, "nombreEus": "Kriminologiako Gradua", "nombreEsp": "Grado en Criminología"},
+                                    {"id": 3, "nombreEus": "Gradu Bikoitza: Enpresen Administrazio eta Zuzendaritza + Zuzenbidea", "nombreEsp": "Doble Grado en ADE + Derecho"}
+                                ]
+                            },
+                            {
+                                "id": 4,
+                                "nombreEus": "Hezkuntza, Filosofia eta Antropologia Fakultatea",
+                                "nombreEsp": "Facultad de Educación, Filosofía y Antropología",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Filosofia", "nombreEsp": "Filosofia"},
+                                    {"id": 2, "nombreEus": "Gizarte Antropologia", "nombreEsp": "Antropología Social"},
+                                    {"id": 3, "nombreEus": "Haur Hezkuntza", "nombreEsp": "Educación Infantil"},
+                                    {"id": 4, "nombreEus": "Gizarte Hezkuntza", "nombreEsp": "Educación Social"},
+                                    {"id": 5, "nombreEus": "Lehen Hezkuntza", "nombreEsp": "Educación Primaria"},
+                                    {"id": 6, "nombreEus": "Pedagogia", "nombreEsp": "Pedagogía"},
+                                    {"id": 7, "nombreEus": "Gradu Bikoitza: Lehen Hezkuntza + Haur Hezkuntza", "nombreEsp": "Doble Grado en Educación Primaria + Educación Infantil"}
+                                ]
+                            },
+                            {
+                                "id": 5,
+                                "nombreEus": "Ekonomia eta Enpresa Fakultatea",
+                                "nombreEsp": "Facultad de Economía y Empresa",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Enpresen Administrazio eta Zuzendaritzako Gradua. Donostia-San Sebastián", "nombreEsp": "Grado en Administración y Dirección de Empresas. Donostia-San Sebastián"}
+                                ]
+                            },
+                            {
+                                "id": 6,
+                                "nombreEus": "Informatika Fakultatea",
+                                "nombreEsp": "Facultad de Informática",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Informatika Ingeniaritzako Gradua", "nombreEsp": "Grado en Ingeniería Informática"},
+                                    {"id": 2, "nombreEus": "Adimen Artifizialeko Gradua", "nombreEsp": "Grado en Inteligencia Artificial"}
+                                ]
+                            },
+                            {
+                                "id": 7,
+                                "nombreEus": "Medikuntza eta Erizaintza Fakultatea",
+                                "nombreEsp": "Facultad de Medicina y Enfermería",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Erizaintzako Gradua", "nombreEsp": "Grado en Enfermería"},
+                                    {"id": 2, "nombreEus": "Fisioterapiako Gradua", "nombreEsp": "Grado en Fisioterapia"},
+                                    {"id": 3, "nombreEus": "Medikuntzako Gradua", "nombreEsp": "Grado en Medicina"},
+                                    {"id": 4, "nombreEus": "Odontologiako Gradua", "nombreEsp": "Grado en Odontología"}
+                                ]
+                            },
+                            {
+                                "id": 8,
+                                "nombreEus": "Psikologia Fakultatea",
+                                "nombreEsp": "Facultad de Psicología",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Psikologia", "nombreEsp": "Psicología"},
+                                    {"id": 2, "nombreEus": "Logopedia", "nombreEsp": "Logopedia"}
+                                ]
+                            },
+                            {
+                                "id": 9,
+                                "nombreEus": "Kimika Fakultatea",
+                                "nombreEsp": "Facultad de Química",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Kimikako gradua", "nombreEsp": "Grado en Química"}
+                                ]
+                            },
+                            {
+                                "id": 10,
+                                "nombreEus": "Gipuzkoako Esperientzia Gelak",
+                                "nombreEsp": "Aulas de la Experiencia de Gipuzkoa",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Giza zientzietako unibertsitate titulua", "nombreEsp": "Título universitario en ciencias humanas"}
+                                ]
+                            },
+                            {
+                                "id": 11,
+                                "nombreEus": "IMHko Ingeniaritza Dualaren Unibertsitate Eskola",
+                                "nombreEsp": "Escuela Universitaria de Ingeniería Dual del IMH",
+                                "grados":[
+                                    {"id": 1, "nombreEus": "Prozesu eta Produktu Berrikuntzan Ingeniaritza Gradua (Duala)", "nombreEsp": "Grado de Ingeniería en Innovación de Procesos y Productos (Dual)"}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "nombreEus": "Masterrak eta Postgraduak",
+                "nombreEsp": "Masters y Postgrados",
+                "postgrados":[
+                    {
+                        "id": 1,
+                        "nombreEus": "IMHko Ingeniaritza Dualaren Unibertsitate Eskola",
+                        "nombreEsp": "Escuela Universitaria de Ingeniería Dual del IMH"
+                    }
+                ]
+
+            },
+            {
+                "id": 3,
+                "nombreEus": "Doktoregoak",
+                "nombreEsp": "Doctorados",
+                "doctorados":[
+                    {
+                        "id": 1,
+                        "nombreEus": "IMHko Ingeniaritza Dualaren Unibertsitate Eskola",
+                        "nombreEsp": "Escuela Universitaria de Ingeniería Dual del IMH"
+                    }
+                ]
+            }
+        ]
+        
+    }
+}
