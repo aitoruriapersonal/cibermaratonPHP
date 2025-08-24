@@ -1,152 +1,88 @@
 <?php
-// filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\ChesscomLiveGames.php
+// filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\modelos\ChesscomPlayerGame.php
 
-class ChesscomPlayerGames
+class ChesscomPlayerGame
 {
-    /** @var ChesscomLiveGame[] */
-    public array $games;
-
-    public function __construct(array $games)
-    {
-        $this->games = $games;
-    }
-
-    public static function fromArray(array $data): ChesscomPlayerGames
-    {
-        $games = [];
-        if (isset($data['games']) && is_array($data['games'])) {
-            foreach ($data['games'] as $gameData) {
-                $games[] = ChesscomLiveGame::fromArray($gameData);
-            }
-        }
-        return new ChesscomPlayerGames($games);
-    }
-}
-
-class ChesscomLiveGame
-{
+    public ?int $id;
+    public int $participante_id;
+    public string $username;
     public string $url;
-    public string $pgn;
-    public string $time_control;
-    public int $end_time;
-    public bool $rated;
-    public ?array $accuracies;
-    public string $tcn;
-    public string $uuid;
-    public string $initial_setup;
-    public string $fen;
-    public string $time_class;
-    public string $rules;
-    public ChesscomPlayer $white;
-    public ChesscomPlayer $black;
-    public string $eco;
+    public ?string $pgn;
+    public ?string $time_control;
+    public ?int $end_time;
+    public ?int $rated;
+    public ?float $accuracy_white;
+    public ?float $accuracy_black;
+    public ?string $fen;
+    public ?string $time_class;
+    public ?string $rules;
+    public ?int $white_rating;
+    public ?string $white_result;
+    public ?string $white_id;
+    public ?string $white_username;
+    public ?string $white_uuid;
+    public ?int $black_rating;
+    public ?string $black_result;
+    public ?string $black_id;
+    public ?string $black_username;
+    public ?string $black_uuid;
+    public ?string $eco;
+    public string $fecha_alta;
+    public ?string $fecha_modificacaion;
 
     public function __construct(
+        ?int $id,
+        int $participante_id,
+        string $username,
         string $url,
-        string $pgn,
-        string $time_control,
-        int $end_time,
-        bool $rated,
-        ?array $accuracies,
-        string $tcn,
-        string $uuid,
-        string $initial_setup,
-        string $fen,
-        string $time_class,
-        string $rules,
-        ChesscomPlayer $white,
-        ChesscomPlayer $black,
-        string $eco
+        ?string $pgn = null,
+        ?string $time_control = null,
+        ?int $end_time = null,
+        ?int $rated = null,
+        ?float $accuracy_white = null,
+        ?float $accuracy_black = null,
+        ?string $fen = null,
+        ?string $time_class = null,
+        ?string $rules = null,
+        ?int $white_rating = null,
+        ?string $white_result = null,
+        ?string $white_id = null,
+        ?string $white_username = null,
+        ?string $white_uuid = null,
+        ?int $black_rating = null,
+        ?string $black_result = null,
+        ?string $black_id = null,
+        ?string $black_username = null,
+        ?string $black_uuid = null,
+        ?string $eco = null,
+        ?string $fecha_alta = null,
+        ?string $fecha_modificacaion = null
     ) {
+        $this->id = $id;
+        $this->participante_id = $participante_id;
+        $this->username = $username;
         $this->url = $url;
         $this->pgn = $pgn;
         $this->time_control = $time_control;
         $this->end_time = $end_time;
         $this->rated = $rated;
-        $this->accuracies = $accuracies;
-        $this->tcn = $tcn;
-        $this->uuid = $uuid;
-        $this->initial_setup = $initial_setup;
+        $this->accuracy_white = $accuracy_white;
+        $this->accuracy_black = $accuracy_black;
         $this->fen = $fen;
         $this->time_class = $time_class;
         $this->rules = $rules;
-        $this->white = $white;
-        $this->black = $black;
+        $this->white_rating = $white_rating;
+        $this->white_result = $white_result;
+        $this->white_id = $white_id;
+        $this->white_username = $white_username;
+        $this->white_uuid = $white_uuid;
+        $this->black_rating = $black_rating;
+        $this->black_result = $black_result;
+        $this->black_id = $black_id;
+        $this->black_username = $black_username;
+        $this->black_uuid = $black_uuid;
         $this->eco = $eco;
-    }
-
-    public static function fromArray(array $data): ChesscomLiveGame
-    {
-        return new ChesscomLiveGame(
-            $data['url'],
-            $data['pgn'],
-            $data['time_control'],
-            $data['end_time'],
-            $data['rated'],
-            isset($data['accuracies']) ? $data['accuracies'] : null,
-            $data['tcn'],
-            $data['uuid'],
-            $data['initial_setup'],
-            $data['fen'],
-            $data['time_class'],
-            $data['rules'],
-            ChesscomPlayer::fromArray($data['white']),
-            ChesscomPlayer::fromArray($data['black']),
-            $data['eco']
-        );
-    }
-}
-
-class ChesscomPlayer
-{
-    public int $rating;
-    public string $result;
-    public string $id;
-    public string $username;
-    public string $uuid;
-
-    public function __construct(
-        int $rating,
-        string $result,
-        string $id,
-        string $username,
-        string $uuid
-    ) {
-        $this->rating = $rating;
-        $this->result = $result;
-        $this->id = $id;
-        $this->username = $username;
-        $this->uuid = $uuid;
-    }
-
-    public static function fromArray(array $data): ChesscomPlayer
-    {
-        return new ChesscomPlayer(
-            $data['rating'],
-            $data['result'],
-            $data['@id'],
-            $data['username'],
-            $data['uuid']
-        );
-    }
-    /**
-     * Convierte el objeto a un array asociativo.
-     */
-    public function toArray(): array
-    {
-        return [
-            'rating' => $this->rating,
-            'result' => $this->result,
-            '@id' => $this->id,
-            'username' => $this->username,
-            'uuid' => $this->uuid
-        ];
-    }
-    /**
-     * Convierte el objeto a una cadena JSON.
-     */
-    public function toJson(): string
-    {
-        return json_encode($this->toArray());
+        $this->fecha_alta = $fecha_alta ?? date('Y-m-d H:i:s');
+        $this->fecha_modificacaion = $fecha_modificacaion;
     }
 }

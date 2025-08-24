@@ -1,208 +1,124 @@
 <?php
-// filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\ChesscomStats.php
+// filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\modelos\ChesscomPlayerStats.php
 
-class ChesscomStats
+class ChesscomPlayerStats
 {
-    public ?ChessGameStats $chess_rapid;
-    public ?ChessGameStats $chess_bullet;
-    public ?ChessGameStats $chess_blitz;
-    public ?TacticsStats $tactics;
-    public ?PuzzleRushStats $puzzle_rush;
+    public ?int $id;
+    public int $participante_id;
+    public string $username;
+    public ?int $rapid_last_rating;
+    public ?int $rapid_last_date;
+    public ?int $rapid_last_rd;
+    public ?int $rapid_best_rating;
+    public ?int $rapid_best_date;
+    public ?string $rapid_best_game;
+    public ?int $rapid_record_win;
+    public ?int $rapid_record_loss;
+    public ?int $rapid_record_draw;
+    public ?int $bullet_last_rating;
+    public ?int $bullet_last_date;
+    public ?int $bullet_last_rd;
+    public ?int $bullet_best_rating;
+    public ?int $bullet_best_date;
+    public ?string $bullet_best_game;
+    public ?int $bullet_record_win;
+    public ?int $bullet_record_loss;
+    public ?int $bullet_record_draw;
+    public ?int $blitz_last_rating;
+    public ?int $blitz_last_date;
+    public ?int $blitz_last_rd;
+    public ?int $blitz_best_rating;
+    public ?int $blitz_best_date;
+    public ?string $blitz_best_game;
+    public ?int $blitz_record_win;
+    public ?int $blitz_record_loss;
+    public ?int $blitz_record_draw;
+    public ?int $tactics_highest_rating;
+    public ?int $tactics_highest_date;
+    public ?int $tactics_lowest_rating;
+    public ?int $tactics_lowest_date;
+    public ?int $puzzle_rush_best_total_attempts;
+    public ?int $puzzle_rush_best_score;
+    public string $fecha_alta;
+    public ?string $decha_modificacion;
 
     public function __construct(
-        ?ChessGameStats $chess_rapid,
-        ?ChessGameStats $chess_bullet,
-        ?ChessGameStats $chess_blitz,
-        ?TacticsStats $tactics,
-        ?PuzzleRushStats $puzzle_rush
+        ?int $id,
+        int $participante_id,
+        string $username,
+        ?int $rapid_last_rating = null,
+        ?int $rapid_last_date = null,
+        ?int $rapid_last_rd = null,
+        ?int $rapid_best_rating = null,
+        ?int $rapid_best_date = null,
+        ?string $rapid_best_game = null,
+        ?int $rapid_record_win = null,
+        ?int $rapid_record_loss = null,
+        ?int $rapid_record_draw = null,
+        ?int $bullet_last_rating = null,
+        ?int $bullet_last_date = null,
+        ?int $bullet_last_rd = null,
+        ?int $bullet_best_rating = null,
+        ?int $bullet_best_date = null,
+        ?string $bullet_best_game = null,
+        ?int $bullet_record_win = null,
+        ?int $bullet_record_loss = null,
+        ?int $bullet_record_draw = null,
+        ?int $blitz_last_rating = null,
+        ?int $blitz_last_date = null,
+        ?int $blitz_last_rd = null,
+        ?int $blitz_best_rating = null,
+        ?int $blitz_best_date = null,
+        ?string $blitz_best_game = null,
+        ?int $blitz_record_win = null,
+        ?int $blitz_record_loss = null,
+        ?int $blitz_record_draw = null,
+        ?int $tactics_highest_rating = null,
+        ?int $tactics_highest_date = null,
+        ?int $tactics_lowest_rating = null,
+        ?int $tactics_lowest_date = null,
+        ?int $puzzle_rush_best_total_attempts = null,
+        ?int $puzzle_rush_best_score = null,
+        ?string $fecha_alta = null,
+        ?string $decha_modificacion = null
     ) {
-        $this->chess_rapid = $chess_rapid;
-        $this->chess_bullet = $chess_bullet;
-        $this->chess_blitz = $chess_blitz;
-        $this->tactics = $tactics;
-        $this->puzzle_rush = $puzzle_rush;
-    }
-
-    public static function fromArray(array $data): ChesscomStats
-    {
-        return new ChesscomStats(
-            isset($data['chess_rapid']) ? ChessGameStats::fromArray($data['chess_rapid']) : null,
-            isset($data['chess_bullet']) ? ChessGameStats::fromArray($data['chess_bullet']) : null,
-            isset($data['chess_blitz']) ? ChessGameStats::fromArray($data['chess_blitz']) : null,
-            isset($data['tactics']) ? TacticsStats::fromArray($data['tactics']) : null,
-            isset($data['puzzle_rush']) ? PuzzleRushStats::fromArray($data['puzzle_rush']) : null
-        );
-    }
-}
-
-class ChessGameStats
-{
-    public ?ChessRating $last;
-    public ?ChessBest $best;
-    public ?ChessRecord $record;
-
-    public function __construct(
-        ?ChessRating $last,
-        ?ChessBest $best,
-        ?ChessRecord $record
-    ) {
-        $this->last = $last;
-        $this->best = $best;
-        $this->record = $record;
-    }
-
-    public static function fromArray(array $data): ChessGameStats
-    {
-        return new ChessGameStats(
-            isset($data['last']) ? ChessRating::fromArray($data['last']) : null,
-            isset($data['best']) ? ChessBest::fromArray($data['best']) : null,
-            isset($data['record']) ? ChessRecord::fromArray($data['record']) : null
-        );
-    }
-}
-
-class ChessRating
-{
-    public int $rating;
-    public int $date;
-    public ?int $rd;
-
-    public function __construct(int $rating, int $date, ?int $rd = null)
-    {
-        $this->rating = $rating;
-        $this->date = $date;
-        $this->rd = $rd;
-    }
-
-    public static function fromArray(array $data): ChessRating
-    {
-        return new ChessRating(
-            $data['rating'],
-            $data['date'],
-            $data['rd'] ?? null
-        );
-    }
-}
-
-class ChessBest
-{
-    public int $rating;
-    public int $date;
-    public ?string $game;
-
-    public function __construct(int $rating, int $date, ?string $game = null)
-    {
-        $this->rating = $rating;
-        $this->date = $date;
-        $this->game = $game;
-    }
-
-    public static function fromArray(array $data): ChessBest
-    {
-        return new ChessBest(
-            $data['rating'],
-            $data['date'],
-            $data['game'] ?? null
-        );
-    }
-}
-
-class ChessRecord
-{
-    public int $win;
-    public int $loss;
-    public int $draw;
-
-    public function __construct(int $win, int $loss, int $draw)
-    {
-        $this->win = $win;
-        $this->loss = $loss;
-        $this->draw = $draw;
-    }
-
-    public static function fromArray(array $data): ChessRecord
-    {
-        return new ChessRecord(
-            $data['win'],
-            $data['loss'],
-            $data['draw']
-        );
-    }
-}
-
-class TacticsStats
-{
-    public ?TacticsRating $highest;
-    public ?TacticsRating $lowest;
-
-    public function __construct(?TacticsRating $highest, ?TacticsRating $lowest)
-    {
-        $this->highest = $highest;
-        $this->lowest = $lowest;
-    }
-
-    public static function fromArray(array $data): TacticsStats
-    {
-        return new TacticsStats(
-            isset($data['highest']) ? TacticsRating::fromArray($data['highest']) : null,
-            isset($data['lowest']) ? TacticsRating::fromArray($data['lowest']) : null
-        );
-    }
-}
-
-class TacticsRating
-{
-    public int $rating;
-    public int $date;
-
-    public function __construct(int $rating, int $date)
-    {
-        $this->rating = $rating;
-        $this->date = $date;
-    }
-
-    public static function fromArray(array $data): TacticsRating
-    {
-        return new TacticsRating(
-            $data['rating'],
-            $data['date']
-        );
-    }
-}
-
-class PuzzleRushStats
-{
-    public ?PuzzleRushBest $best;
-
-    public function __construct(?PuzzleRushBest $best)
-    {
-        $this->best = $best;
-    }
-
-    public static function fromArray(array $data): PuzzleRushStats
-    {
-        return new PuzzleRushStats(
-            isset($data['best']) ? PuzzleRushBest::fromArray($data['best']) : null
-        );
-    }
-}
-
-class PuzzleRushBest
-{
-    public int $total_attempts;
-    public int $score;
-
-    public function __construct(int $total_attempts, int $score)
-    {
-        $this->total_attempts = $total_attempts;
-        $this->score = $score;
-    }
-
-    public static function fromArray(array $data): PuzzleRushBest
-    {
-        return new PuzzleRushBest(
-            $data['total_attempts'],
-            $data['score']
-        );
+        $this->id = $id;
+        $this->participante_id = $participante_id;
+        $this->username = $username;
+        $this->rapid_last_rating = $rapid_last_rating;
+        $this->rapid_last_date = $rapid_last_date;
+        $this->rapid_last_rd = $rapid_last_rd;
+        $this->rapid_best_rating = $rapid_best_rating;
+        $this->rapid_best_date = $rapid_best_date;
+        $this->rapid_best_game = $rapid_best_game;
+        $this->rapid_record_win = $rapid_record_win;
+        $this->rapid_record_loss = $rapid_record_loss;
+        $this->rapid_record_draw = $rapid_record_draw;
+        $this->bullet_last_rating = $bullet_last_rating;
+        $this->bullet_last_date = $bullet_last_date;
+        $this->bullet_last_rd = $bullet_last_rd;
+        $this->bullet_best_rating = $bullet_best_rating;
+        $this->bullet_best_date = $bullet_best_date;
+        $this->bullet_best_game = $bullet_best_game;
+        $this->bullet_record_win = $bullet_record_win;
+        $this->bullet_record_loss = $bullet_record_loss;
+        $this->bullet_record_draw = $bullet_record_draw;
+        $this->blitz_last_rating = $blitz_last_rating;
+        $this->blitz_last_date = $blitz_last_date;
+        $this->blitz_last_rd = $blitz_last_rd;
+        $this->blitz_best_rating = $blitz_best_rating;
+        $this->blitz_best_date = $blitz_best_date;
+        $this->blitz_best_game = $blitz_best_game;
+        $this->blitz_record_win = $blitz_record_win;
+        $this->blitz_record_loss = $blitz_record_loss;
+        $this->blitz_record_draw = $blitz_record_draw;
+        $this->tactics_highest_rating = $tactics_highest_rating;
+        $this->tactics_highest_date = $tactics_highest_date;
+        $this->tactics_lowest_rating = $tactics_lowest_rating;
+        $this->tactics_lowest_date = $tactics_lowest_date;
+        $this->puzzle_rush_best_total_attempts = $puzzle_rush_best_total_attempts;
+        $this->puzzle_rush_best_score = $puzzle_rush_best_score;
+        $this->fecha_alta = $fecha_alta ?? date('Y-m-d H:i:s');
+        $this->decha_modificacion = $decha_modificacion;
     }
 }
