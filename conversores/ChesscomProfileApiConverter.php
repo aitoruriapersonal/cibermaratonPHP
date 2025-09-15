@@ -1,8 +1,8 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\modelo\chesscomJSON\ChesscomProfileApiConverter.php
 
-require_once __DIR__ . '/../ChesscomProfile.php';
-require_once __DIR__ . '/ChesscomProfileApiModel.php';
+require_once __DIR__ . '/../modelo/ChesscomProfile.php';
+require_once __DIR__ . '/../modelo/chesscomJSON/ChesscomProfileApiModel.php';
 
 class ChesscomProfileApiConverter
 {

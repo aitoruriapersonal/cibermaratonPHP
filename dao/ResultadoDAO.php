@@ -1,7 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\ResultadoDAO.php
 
-require_once __DIR__ . '/../modelos/Resultado.php';
+require_once __DIR__ . '/../modelo/Resultado.php';
 
 class ResultadoDAO
 {
@@ -147,4 +147,47 @@ class ResultadoDAO
         $stmt = $this->pdo->prepare("DELETE FROM resultados WHERE id = ?");
         return $stmt->execute([$id]);
     }
+
+    /**
+     * Obtiene los resultados por participante.
+     *
+     * @param int $participanteId
+     * @return array
+     */
+    public function getResultadosPorParticipante($participanteId) {
+        $stmt = $this->pdo->prepare("SELECT * FROM resultados WHERE participante_id = :participante_id");
+        $stmt->execute(['participante_id' => $participanteId]);
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    /**
+     * Obtiene los resultados por el nickname del participante.
+     */
+    public function getResultadosPorParticipanteNickName(string $username): array
+{
+    $stmt = $this->pdo->prepare("SELECT * FROM resultados WHERE username = ? ORDER BY fecha_partida DESC, id DESC");
+    $stmt->execute([$username]);
+    $result = [];
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        $result[] = new Resultado(
+            $row['id'],
+            $row['participante_id'],
+            $row['username'],
+            $row['color'],
+            $row['elo'],
+            $row['rival'],
+            $row['color_rival'],
+            $row['elo_rival'],
+            $row['resultado'],
+            $row['resultado_desc'],
+            $row['fecha_partida'],
+            $row['url_partida'],
+            $row['numero_partida'],
+            $row['fecha_alta'],
+            $row['fecha_modificacion']
+        );
+    }
+    return $result;
+}
+
 }

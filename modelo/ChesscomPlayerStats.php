@@ -40,7 +40,7 @@ class ChesscomPlayerStats
     public ?int $puzzle_rush_best_total_attempts;
     public ?int $puzzle_rush_best_score;
     public string $fecha_alta;
-    public ?string $decha_modificacion;
+    public ?string $fecha_modificacion;
 
     public function __construct(
         ?int $id,
@@ -80,7 +80,7 @@ class ChesscomPlayerStats
         ?int $puzzle_rush_best_total_attempts = null,
         ?int $puzzle_rush_best_score = null,
         ?string $fecha_alta = null,
-        ?string $decha_modificacion = null
+        ?string $fecha_modificacion = null
     ) {
         $this->id = $id;
         $this->participante_id = $participante_id;
@@ -119,6 +119,6 @@ class ChesscomPlayerStats
         $this->puzzle_rush_best_total_attempts = $puzzle_rush_best_total_attempts;
         $this->puzzle_rush_best_score = $puzzle_rush_best_score;
         $this->fecha_alta = $fecha_alta ?? date('Y-m-d H:i:s');
-        $this->decha_modificacion = $decha_modificacion;
+        $this->fecha_modificacion = $fecha_modificacion;
     }
 }

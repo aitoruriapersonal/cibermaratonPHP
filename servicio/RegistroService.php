@@ -28,7 +28,7 @@ class RegistroService
             if (!$universidad) {
                 throw new InvalidArgumentException('La universidad no existe.');
             }
-            if($universidad['siglas_eus']=='EHU'){
+            if($universidad->siglas_eus == 'EHU'){
                 $data['tipo'] = 'UPV';
             }else{
                 $data['tipo'] = 'UNI';
@@ -43,7 +43,7 @@ class RegistroService
         $nickGenerado = $this->generarNick($data['tipo'], $data['dni'], $data['nombre']);
         $data['nick'] = $nickGenerado;
         $participanteInsertadoId = $this->participanteService->createParticipante($data);
-        $respuesta['participante'] = $this->participanteService->getParticipanteById($participanteInsertadoId['id']);
+        $respuesta['participante'] = $this->participanteService->getParticipanteById($participanteInsertadoId->id);
         $respuesta['resultado'] = 'OK';
         $respuesta['mensajeES'] = 'Se ha registrado correctamente en el Cibermaraton. Su codigo de participante (nick) es ' . $data['nick']
             .'. <br>Debe registrarse en <a href="https://www.chess.com/" target="_blank">Chess.com</a> con dicho nick. De no hacerlo así no se le podrá hacer el seguimiento correspondiente.'

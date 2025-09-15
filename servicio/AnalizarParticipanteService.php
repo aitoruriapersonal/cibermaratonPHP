@@ -36,4 +36,30 @@ class AnalizarParticipanteService
     {
             return $this->dao->delete($id);
     }
+
+    public function existeAnalisisPendiente(int $participante_id): bool
+    {
+        return $this->dao->existeAnalisisPendiente($participante_id);
+    }
+
+    public function insertarPendiente(int $participante_id): void
+    {
+        $this->dao->insertarPendiente($participante_id);
+    }
+
+    public function obtenerAnalisisPendientes(): array
+    {
+        return $this->dao->obtenerAnalisisPendientes();
+    }
+
+    public function obtenerPrimerAnalisisPendiente(): ?AnalizarParticipante
+    {
+        return $this->dao->obtenerPrimerAnalisisPendiente();
+    }
+
+    public function cambiarEstado(int $id, int $estado): void
+    {
+        $this->dao->cambiarEstado($id, $estado);
+    }
+
 }

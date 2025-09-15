@@ -1,7 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\servicio\CampeonatoParticipanteService.php
 
-require_once __DIR__ . '/../dao/ParticipanteDAO.php';
+require_once __DIR__ . '/../dao/ParticipantesDAO.php';
 
 class ParticipantesService
 {
@@ -103,6 +103,31 @@ class ParticipantesService
         }
 
         return $prefijo . $dni5 . $nombreCamel . $correlativo;
+    }
+
+     public function getParticipantesNoTerminadosSinFinalizar(): array
+    {
+        return $this->dao->getParticipantesNoTerminadosSinFinalizar();
+    }
+
+    public function getParticipantesActivosCibermaratonActivo(): array
+    {
+        return $this->dao->getParticipantesActivosCibermaratonActivo();
+    }
+
+     public function actualizarEstado($participanteId, $nuevoEstado) {
+        $this->dao->actualizarEstado($participanteId, $nuevoEstado);
+        return $this->dao->getParticipanteById($participanteId);
+    }
+
+    public function actualizarEstadoTerminado($participante) {
+        $this->dao->actualizarEstadoTerminado($participante);
+        return $this->dao->getParticipanteById($participante->id);
+    }
+
+    public function actualizarPuntos($participanteId, $nuevosPuntos) {
+        $this->dao->actualizarPuntos($participanteId, $nuevosPuntos);
+        return $this->dao->getParticipanteById($participanteId);
     }
 
 }

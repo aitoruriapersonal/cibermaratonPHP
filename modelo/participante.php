@@ -8,6 +8,7 @@ class Participante
     public string $nombre;
     public string $apellidos;
     public string $dni;
+    public ?string $genero;
     public string $telefono;
     public string $email;
     public string $fecha_nacimiento;
@@ -28,6 +29,7 @@ class Participante
         string $nombre,
         string $apellidos,
         string $dni,
+        ?string $genero,
         string $telefono,
         string $email,
         string $fecha_nacimiento,
@@ -47,6 +49,7 @@ class Participante
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
         $this->dni = $dni;
+        $this->genero = $genero;
         $this->telefono = $telefono;
         $this->email = $email;
         $this->fecha_nacimiento = $fecha_nacimiento;

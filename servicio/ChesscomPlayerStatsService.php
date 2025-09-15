@@ -37,8 +37,18 @@ class ChesscomPlayerStatsService
         return $this->dao->update($stats);
     }
 
+    public function actualizarStatsParticipante(ChesscomPlayerStats $stats): bool
+    {
+        return $this->dao->updateStats($stats);
+    }
+
     public function eliminarStats(int $id): bool
     {
         return $this->dao->delete($id);
+    }
+
+    public function existeStats(int $participante_id): bool
+    {
+        return $this->dao->existeStats($participante_id);
     }
 }

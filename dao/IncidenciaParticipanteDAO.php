@@ -1,7 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\IncidenciaParticipanteDAO.php
 
-require_once __DIR__ . '/../modelos/IncidenciaParticipante.php';
+require_once __DIR__ . '/../modelo/IncidenciaParticipante.php';
 
 class IncidenciaParticipanteDAO
 {

@@ -1,7 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\LogAnalisisDAO.php
 
-require_once __DIR__ . '/../modelos/LogAnalisis.php';
+require_once __DIR__ . '/../modelo/LogAnalisis.php';
 
 class LogAnalisisDAO
 {

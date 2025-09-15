@@ -36,4 +36,10 @@ class ChesscomProfileService
     {
         return $this->dao->delete($player_id);
     }
+
+    public function existeProfile(int $participante_id, string $username): bool
+    {
+        return $this->dao->existeProfile($participante_id, $username);
+    }
+
 }

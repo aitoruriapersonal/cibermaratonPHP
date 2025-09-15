@@ -3,7 +3,7 @@
 
 require_once __DIR__ . '/../dao/ResultadoDAO.php';
 
-class ResultadoService
+class ResultadosService
 {
     private ResultadoDAO $dao;
 
@@ -41,4 +41,15 @@ class ResultadoService
     {
         return $this->dao->delete($id);
     }
+
+    public function getResultadosPorParticipante(int $participanteId): array
+    {
+        return $this->dao->getResultadosPorParticipante($participanteId);
+    }
+
+    public function getResultadosByParticipanteNickName(string $nickName): array
+    {
+        return $this->dao->getResultadosPorParticipanteNickName($nickName);
+    }
+
 }

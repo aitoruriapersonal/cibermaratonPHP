@@ -2,14 +2,20 @@
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\servicio\CampeonatoParticipanteService.php
 
 require_once __DIR__ . '/../dao/BasesDAO.php';
+require_once __DIR__ . '/../dao/SeccionesDAO.php';
+require_once __DIR__ . '/../dao/ArticulosDAO.php';
 
 class BasesService
 {
     private BasesDAO $dao;
+    private SeccionesDAO $seccionesDAO;
+    private ArticulosDAO $articulosDAO;
 
     public function __construct(PDO $pdo)
     {
         $this->dao = new BasesDAO($pdo);
+        $this->seccionesDAO = new SeccionesDAO($pdo);
+        $this->articulosDAO = new ArticulosDAO($pdo);
     }
 
     // Bases
@@ -42,4 +48,28 @@ class BasesService
     {
         return $this->dao->delete($id);
     }
+
+    public function getBasesCompletasByCampeonatoId(int $campeonatoId): array
+{
+    $bases = $this->dao->getBasesByCampeonatoId($campeonatoId);
+    // Para cada base, obtener sus secciones y para cada sección sus artículos
+    $basesArray = [];
+    foreach ($bases as $base) {
+        $secciones = $this->seccionesDAO->getSeccionesByBasesId($base->id);
+        $seccionesArray = [];
+        foreach ($secciones as $seccion) {
+            $articulos = $this->articulosDAO->getArticulosBySeccionId($seccion->id);
+            $seccionObj = (array)$seccion;
+            $seccionObj['articulos'] = $articulos;
+            $seccionesArray[] = $seccionObj;
+        }
+        $baseObj = (array)$base;
+        $baseObj['secciones'] = $seccionesArray;
+        $basesArray[] = $baseObj;
+    }
+
+    return [
+        'bases' => $basesArray
+    ];
+}
 }

@@ -1,6 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\CampeonatoDAO.php
 
+require_once __DIR__ . '/../modelo/ArticuloSeccion.php';
 class ArticulosDAO
 {
     private PDO $pdo;
@@ -28,19 +29,34 @@ class ArticulosDAO
     {
         $stmt = $this->pdo->prepare("SELECT * FROM articulos_secciones WHERE seccion_id = ? ORDER BY orden ASC");
         $stmt->execute([$seccionId]);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $result[] = new ArticuloSeccion(
+                $row['id'],
+                $row['seccion_id'],
+                $row['titulo_es'],
+                $row['titulo_eu'],
+                $row['descripcion_es'],
+                $row['descripcion_eu'],
+                $row['orden'],
+                $row['fecha_alta'],
+                $row['fecha_modificacion']
+            );
+        }
+        return $result;
     }
 
     public function createArticulo(ArticuloSeccion $articulo): int
     {
         $stmt = $this->pdo->prepare("
-            INSERT INTO articulos_secciones (seccion_id, titulo, descripcion, orden, fecha_alta, fecha_modificacion)
-            VALUES (?, ?, ?, ?, ?, ?)
+            INSERT INTO articulos_secciones (seccion_id, titulo_es, titulo_eu, descripcion_es, descripcion_eu, orden, fecha_alta, fecha_modificacion)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ");
         $stmt->execute([
             $articulo->seccion_id,
-            $articulo->titulo,
-            $articulo->descripcion,
+            $articulo->tituloES,
+            $articulo->tituloEU,
+            $articulo->descripcionES,
+            $articulo->descripcionEU,
             $articulo->orden,
             $articulo->fecha_alta,
             $articulo->fecha_modificacion
@@ -52,13 +68,15 @@ class ArticulosDAO
     {
         $stmt = $this->pdo->prepare("
             UPDATE articulos_secciones
-            SET seccion_id = ?, titulo = ?, descripcion = ?, orden = ?, fecha_modificacion = ?
+            SET seccion_id = ?, titulo_es = ?, titulo_eu = ?, descripcion_es = ?, descripcion_eu = ?, orden = ?, fecha_modificacion = ?
             WHERE id = ?
         ");
         return $stmt->execute([
             $articulo->seccion_id,
-            $articulo->titulo,
-            $articulo->descripcion,
+            $articulo->tituloES,
+            $articulo->tituloEU,
+            $articulo->descripcionES,
+            $articulo->descripcionEU,
             $articulo->orden,
             $articulo->fecha_modificacion ?? date('Y-m-d H:i:s'),
             $articulo->id

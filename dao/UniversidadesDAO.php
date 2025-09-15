@@ -1,6 +1,8 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\UniversidadesDAO.php
 
+require_once __DIR__ . '/../modelo/Universidad.php';
+
 class UniversidadesDAO
 {
     private PDO $pdo;

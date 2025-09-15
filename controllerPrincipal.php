@@ -1,6 +1,8 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\public\api.php
 
+use LDAP\Result;
+
 require_once __DIR__ . '/servicio/ArticulosService.php';
 require_once __DIR__ . '/servicio/BasesService.php';
 require_once __DIR__ . '/servicio/CampeonatosService.php';
@@ -15,6 +17,8 @@ require_once __DIR__ . '/servicio/RegistroService.php';
 require_once __DIR__ . '/servicio/SeccionesService.php';
 require_once __DIR__ . '/servicio/TipoEstudiosService.php';
 require_once __DIR__ . '/servicio/UniversidadesService.php';
+require_once __DIR__ . '/servicio/ValoresGenericosService.php';
+require_once __DIR__ . '/servicio/ResultadosService.php';
 
 // Configuración de cabeceras para CORS y JSON
 header("Access-Control-Allow-Origin: *");
@@ -153,6 +157,24 @@ if (isset($uri[3]) && $uri[2] === 'api') {
                     throw new InvalidArgumentException('KO. Petición no válida.');
                 }
                 echo json_encode($respuesta);
+            }
+            break;
+        case 'basesCompletasByCampeonato':
+            $service = new BasesService($pdo);
+            if ($method === 'GET') {
+                echo json_encode($service->getBasesCompletasByCampeonatoId((int)($uri[4] ?? 0)));
+            }
+            break;
+        case 'generos':
+            $service = new ValoresGenericosService($pdo);
+            if ($method === 'GET') {
+                echo json_encode($service->getByTipo('genero'));
+            }
+            break;
+        case 'resultadosByParticipanteNickName':
+            $service = new ResultadosService($pdo);
+            if ($method === 'GET') {
+                echo json_encode($service->getResultadosByParticipanteNickName(($uri[4] ?? '')));
             }
             break;
         /*case 'basesByCampeonatoId':

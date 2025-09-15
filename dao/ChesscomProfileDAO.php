@@ -1,7 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\ChesscomProfileDAO.php
 
-require_once __DIR__ . '/../modelos/ChesscomProfile.php';
+require_once __DIR__ . '/../modelo/ChesscomProfile.php';
 
 class ChesscomProfileDAO
 {
@@ -119,4 +119,15 @@ class ChesscomProfileDAO
         $stmt = $this->pdo->prepare("DELETE FROM chesscom_profile WHERE player_id = ?");
         return $stmt->execute([$player_id]);
     }
+
+    // Verifica si existe un perfil de chess.com para el participante y username dados
+    public function existeProfile($participanteId, $username) {
+        $stmt = $this->pdo->prepare("SELECT COUNT(*) FROM chesscom_profile WHERE participante_id = :participante_id AND username = :username");
+        $stmt->execute([
+            ':participante_id' => $participanteId,
+            ':username' => $username
+        ]);
+        return $stmt->fetchColumn() > 0;
+    }
+
 }

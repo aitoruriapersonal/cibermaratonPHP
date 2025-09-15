@@ -1,6 +1,8 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\ProvinciasDAO.php
 
+require_once __DIR__ . '/../modelo/Provincia.php';
+
 class ProvinciasDAO
 {
     private PDO $pdo;

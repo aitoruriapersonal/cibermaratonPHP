@@ -1,6 +1,8 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\ClubsDAO.php
 
+require_once __DIR__ . '/../modelo/Club.php';
+
 class ClubsDAO
 {
     private PDO $pdo;

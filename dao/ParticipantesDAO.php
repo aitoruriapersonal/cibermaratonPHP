@@ -1,6 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\CampeonatoParticipanteDAO.php
 
+require_once __DIR__ . '/../modelo/Participante.php';
 class ParticipantesDAO
 {
     private PDO $pdo;
@@ -25,6 +26,7 @@ class ParticipantesDAO
             $row['nombre'],
             $row['apellidos'],
             $row['dni'],
+            $row['genero'],
             $row['telefono'],
             $row['email'],
             $row['fecha_nacimiento'],
@@ -81,6 +83,7 @@ class ParticipantesDAO
                 $row['nombre'],
                 $row['apellidos'],
                 $row['dni'],
+                $row['genero'],
                 $row['telefono'],
                 $row['email'],
                 $row['fecha_nacimiento'],
@@ -152,12 +155,13 @@ class ParticipantesDAO
             ':nombre'           => $data['nombre'],
             ':apellidos'        => $data['apellidos'],
             ':dni'              => $data['dni'],
+            ':genero'           => $data['genero'],
             ':telefono'         => $data['telefono'],
             ':email'            => $data['email'],
             ':fecha_nacimiento' => $data['nacimiento'],
             ':nick'             => $data['nick'],
             //':puntos'           => $data['puntos'] ?? 0,
-            ':estudio_id'       => $data['estudio'] ?? null,
+            ':estudio_id'       => $data['estudios'] ?? null,
             ':club_id'          => $data['club'] ?? null
             //':estado'           => $data['estado'] ?? 'Sin registro chesscom',
             //':terminado'        => $data['terminado'] ?? 0,
@@ -173,28 +177,20 @@ class ParticipantesDAO
     {
         $stmt = $this->pdo->prepare("
             INSERT INTO participantes (
-                campeonato_id, nombre, apellidos, dni, telefono, email, fecha_nacimiento, nick, puntos,
-                estudio_id, club_id, estado, terminado, creditos_totales, fecha_finalizado, fecha_alta, fecha_modificacion
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                campeonato_id, nombre, apellidos, dni, genero,
+                telefono, email, fecha_nacimiento, nick, puntos,
+                estudio_id, club_id, estado, terminado, creditos_totales,
+                fecha_finalizado, fecha_alta, fecha_modificacion
+            ) VALUES (?, ?, ?, ?, ?,
+             ?, ?, ?, ?, ?,
+             ?, ?, ?, ?, ?,
+             ?, ?, ?)
         ");
         $stmt->execute([
-            $p->campeonato_id,
-            $p->nombre,
-            $p->apellidos,
-            $p->dni,
-            $p->telefono,
-            $p->email,
-            $p->fecha_nacimiento,
-            $p->nick,
-            $p->puntos,
-            $p->estudio_id,
-            $p->club_id,
-            $p->estado,
-            $p->terminado,
-            $p->creditos_totales,
-            $p->fecha_finalizado,
-            $p->fecha_alta,
-            $p->fecha_modificacion
+            $p->campeonato_id, $p->nombre,$p->apellidos,$p->dni,$p->genero,
+            $p->telefono,$p->email,$p->fecha_nacimiento,$p->nick,$p->puntos,
+            $p->estudio_id,$p->club_id,$p->estado,$p->terminado,$p->creditos_totales,
+            $p->fecha_finalizado,$p->fecha_alta,$p->fecha_modificacion
         ]);
         return (int)$this->pdo->lastInsertId();
     }
@@ -211,6 +207,7 @@ class ParticipantesDAO
                 $row['apellidos'],
                 $row['dni'],
                 $row['telefono'],
+                $row['genero'],
                 $row['email'],
                 $row['fecha_nacimiento'],
                 $row['nick'],
@@ -237,6 +234,7 @@ class ParticipantesDAO
                 apellidos = :apellidos,
                 dni = :dni,
                 telefono = :telefono,
+                genero = :genero,
                 email = :email,
                 fecha_nacimiento = :fecha_nacimiento,
                 nick = :nick,
@@ -281,7 +279,7 @@ class ParticipantesDAO
     {
         $stmt = $this->pdo->prepare("
             UPDATE participantes SET
-                campeonato_id = ?, nombre = ?, apellidos = ?, dni = ?, telefono = ?, email = ?, fecha_nacimiento = ?, nick = ?, puntos = ?,
+                campeonato_id = ?, nombre = ?, apellidos = ?, dni = ?, genero = ?, telefono = ?, email = ?, fecha_nacimiento = ?, nick = ?, puntos = ?,
                 estudio_id = ?, club_id = ?, estado = ?, terminado = ?, creditos_totales = ?, fecha_finalizado = ?, fecha_modificacion = ?
             WHERE id = ?
         ");
@@ -290,6 +288,7 @@ class ParticipantesDAO
             $p->nombre,
             $p->apellidos,
             $p->dni,
+            $p->genero,
             $p->telefono,
             $p->email,
             $p->fecha_nacimiento,
@@ -321,4 +320,116 @@ class ParticipantesDAO
         $stmt->execute([$campeonatoId, $dni]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    // Devuelve un array de objetos Participante con terminado=0 y fecha_finalizado IS NULL
+    public function getParticipantesNoTerminadosSinFinalizar(): array
+    {
+        $stmt = $this->pdo->query("SELECT * FROM participantes WHERE terminado = 0 AND fecha_finalizado IS NULL");
+        $result = [];
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $result[] = new Participante(
+                $row['id'],
+                $row['campeonato_id'],
+                $row['nombre'],
+                $row['apellidos'],
+                $row['dni'],
+                $row['telefono'],
+                $row['email'],
+                $row['fecha_nacimiento'],
+                $row['nick'],
+                $row['puntos'],
+                $row['estudio_id'],
+                $row['club_id'],
+                $row['estado'],
+                $row['terminado'],
+                $row['creditos_totales'],
+                $row['fecha_finalizado'],
+                $row['fecha_alta'],
+                $row['fecha_modificacion']
+            );
+        }
+        return $result;
+    }
+
+    // Devuelve un array de objetos Participante con terminado=0 y fecha_finalizado IS NULL
+    public function getParticipantesActivosCibermaratonActivo(): array
+    {
+        // 1. Buscar participantes que cumplen las condiciones adicionales:
+        // - terminado = 0
+        // - fecha_finalizado IS NULL
+        // - estado IN (0,1,2)
+        // - campeonato.tipo_campeonato = 'cibermaraton'
+        // - campeonato.fecha_fin > NOW()
+        $sql = "
+            SELECT p.*
+            FROM participantes p
+            INNER JOIN campeonatos c ON p.campeonato_id = c.id
+            WHERE p.terminado = 0
+            AND p.fecha_finalizado IS NULL
+            AND p.estado IN (1,3,4)
+            AND c.tipo_campeonato = 'cibermaraton'
+            AND (c.fecha_fin > NOW() AND c.fecha_inicio < NOW());
+        ";
+        $stmt = $this->pdo->query($sql);
+        $participantes = [];
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $participantes[] = new Participante(
+                $row['id'],
+                $row['campeonato_id'],
+                $row['nombre'],
+                $row['apellidos'],
+                $row['dni'],
+                $row['genero'],
+                $row['telefono'],
+                $row['email'],
+                $row['fecha_nacimiento'],
+                $row['nick'],
+                $row['puntos'],
+                $row['estudio_id'],
+                $row['club_id'],
+                $row['estado'],
+                $row['terminado'],
+                $row['creditos_totales'],
+                $row['fecha_finalizado'],
+                $row['fecha_alta'],
+                $row['fecha_modificacion']
+            );
+        }
+        return $participantes;
+    }
+
+    // Método para actualizar el estado de un participante
+    public function actualizarEstado($participanteId, $nuevoEstado) {
+        $stmt = $this->pdo->prepare("UPDATE participantes SET estado = :estado,
+                fecha_modificacion = NOW() WHERE id = :id");
+        $stmt->execute([
+            ':estado' => $nuevoEstado,
+            ':id' => $participanteId
+        ]);
+    }
+
+    public function actualizarEstadoTerminado($participante) {
+        // Si el participante es universitario (estudio_id no es null), asignar 1 crédito
+        if($participante->estudio_id != null){
+            $query = "UPDATE participantes SET estado = 0, terminado = 1, fecha_finalizado = NOW(),
+                creditos_totales = 1, fecha_modificacion = NOW() WHERE id = :id";
+        }else{ // Si es federado, no asignar créditos
+            $query = "UPDATE participantes SET estado = 0, terminado = 1, fecha_finalizado = NOW(),
+                fecha_modificacion = NOW() WHERE id = :id";
+        }
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute([
+            ':id' => $participante->id
+        ]);
+
+    }
+
+    public function actualizarPuntos($participanteId, $puntos) {
+        $stmt = $this->pdo->prepare("UPDATE participantes SET puntos = :puntos, fecha_modificacion = NOW() WHERE id = :id");
+        $stmt->execute([
+            ':puntos' => $puntos,
+            ':id' => $participanteId
+        ]);
+    }
+
 }

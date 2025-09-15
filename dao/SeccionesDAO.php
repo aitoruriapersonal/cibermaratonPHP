@@ -1,6 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\CampeonatoDAO.php
 
+require_once __DIR__ . '/../modelo/SeccionBase.php';
 class SeccionesDAO
 {
     private PDO $pdo;
@@ -18,7 +19,8 @@ class SeccionesDAO
             $result[] = new SeccionBase(
                 $row['id'],
                 $row['base_id'],
-                $row['titulo'],
+                $row['titulo_es'],
+                $row['titulo_eu'],
                 $row['orden'],
                 $row['fecha_alta'],
                 $row['fecha_modificacion']
@@ -35,7 +37,8 @@ class SeccionesDAO
         return $row ? new SeccionBase(
             $row['id'],
             $row['base_id'],
-            $row['titulo'],
+            $row['titulo_es'],
+            $row['titulo_eu'],
             $row['orden'],
             $row['fecha_alta'],
             $row['fecha_modificacion']
@@ -44,14 +47,15 @@ class SeccionesDAO
     
     public function getSeccionesByBasesId(int $id): ?array
     {
-        $stmt = $this->pdo->prepare("SELECT * FROM secciones_bases WHERE bases_id = ? ORDER BY orden ASC");
+        $stmt = $this->pdo->prepare("SELECT * FROM secciones_bases WHERE base_id = ? ORDER BY orden ASC");
         $stmt->execute([$id]);
         $result = [];
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $result[] = new SeccionBase(
                 $row['id'],
                 $row['base_id'],
-                $row['titulo'],
+                $row['titulo_es'],
+                $row['titulo_eu'],
                 $row['orden'],
                 $row['fecha_alta'],
                 $row['fecha_modificacion']
@@ -63,12 +67,13 @@ class SeccionesDAO
     public function create(SeccionBase $seccion): int
     {
         $stmt = $this->pdo->prepare("
-            INSERT INTO secciones_bases (base_id, titulo, orden, fecha_alta, fecha_modificacion)
+            INSERT INTO secciones_bases (base_id, titulo_es, titulo_eu, orden, fecha_alta, fecha_modificacion)
             VALUES (?, ?, ?, ?, ?)
         ");
         $stmt->execute([
             $seccion->base_id,
-            $seccion->titulo,
+            $seccion->tituloES,
+            $seccion->tituloEU,
             $seccion->orden,
             $seccion->fecha_alta,
             $seccion->fecha_modificacion
@@ -80,12 +85,13 @@ class SeccionesDAO
     {
         $stmt = $this->pdo->prepare("
             UPDATE secciones_bases
-            SET base_id = ?, titulo = ?, orden = ?, fecha_modificacion = ?
+            SET base_id = ?, titulo_es = ?, titulo_eu = ?, orden = ?, fecha_modificacion = ?
             WHERE id = ?
         ");
         return $stmt->execute([
             $seccion->base_id,
-            $seccion->titulo,
+            $seccion->tituloES,
+            $seccion->tituloEU,
             $seccion->orden,
             $seccion->fecha_modificacion ?? date('Y-m-d H:i:s'),
             $seccion->id

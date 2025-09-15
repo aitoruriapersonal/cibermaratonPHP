@@ -1,7 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\servicio\ChesscomPlayerStatsApiService.php
 
-require_once __DIR__ . '/../modelo/chesscomJSON/ChesscomPlayerStatsApiModel.php';
+require_once __DIR__ . '/../../modelo/chesscomJSON/ChesscomPlayerStatsApiModel.php';
 
 class ChesscomPlayerStatsApiService
 {

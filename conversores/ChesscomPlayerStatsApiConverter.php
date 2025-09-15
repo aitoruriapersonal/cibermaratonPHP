@@ -6,12 +6,12 @@ require_once __DIR__ . '/../modelo/chesscomJSON/ChesscomPlayerStatsApiModel.php'
 
 class ChesscomPlayerStatsApiConverter
 {
-    public static function toChesscomPlayerStats(ChesscomPlayerStatsApiModel $apiModel, int $participante_id, string $username): ChesscomPlayerStats
+    public static function toChesscomPlayerStats(ChesscomPlayerStatsApiModel $apiModel, Participante $participante): ChesscomPlayerStats
     {
         return new ChesscomPlayerStats(
             null, // id (autoincremental)
-            $participante_id,
-            $username,
+            $participante->id,
+            $participante->nick,
             // Rapid
             $apiModel->chess_rapid['last']['rating'] ?? null,
             $apiModel->chess_rapid['last']['date'] ?? null,

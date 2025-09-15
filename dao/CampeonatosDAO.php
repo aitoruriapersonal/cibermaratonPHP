@@ -1,6 +1,8 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\CampeonatoDAO.php
 
+require_once __DIR__ . '/../modelo/Campeonato.php';
+
 class CampeonatosDAO
 {
     private PDO $pdo;

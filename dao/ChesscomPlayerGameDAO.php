@@ -1,7 +1,7 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\dao\ChesscomPlayerGameDAO.php
 
-require_once __DIR__ . '/../modelos/ChesscomPlayerGame.php';
+require_once __DIR__ . '/../modelo/ChesscomPlayerGame.php';
 
 class ChesscomPlayerGameDAO
 {
