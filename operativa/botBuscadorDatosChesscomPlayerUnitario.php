@@ -22,9 +22,37 @@ require_once __DIR__ . '/../conversores/ChesscomPlayerGameApiConverter.php';
 
 require_once __DIR__ . '/../utilidades/Constantes.php';
 
-// Configuración de conexión PDO (ajusta los datos a tu entorno)
-$pdo = new PDO('mysql:host=localhost;dbname=cibermaraton', 'root', '');
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$esLocal = false;
+// Conexión PDO (ajusta los datos a tu entorno)
+try {
+    if ($esLocal) {
+        $dsn = 'mysql:host=127.0.0.1;dbname=cibermaraton;charset=utf8mb4';
+        $usuario = 'root';
+        $password = '';
+    } else {
+        $dbHost = "db552696640.db.1and1.com";
+        $dbUsuario = "dbo552696640";
+        $dbPass = "Elefante3000";
+        $dbSchema = "db552696640";
+        $dsn = "mysql:host={$dbHost};dbname={$dbSchema};charset=utf8mb4";
+        $usuario = $dbUsuario;
+        $password = $dbPass;
+    }
+
+    $options = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES => false,
+        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4"
+    ];
+
+    $pdo = new PDO($dsn, $usuario, $password, $options);
+} catch (PDOException $e) {
+    error_log('DB connection error: ' . $e->getMessage());
+    http_response_code(500);
+    echo json_encode(['error' => 'Database connection error']);
+    exit;
+}
 
 // Instanciar servicios y log
 $logAnalisisService = new LogAnalisisService($pdo);
@@ -33,7 +61,7 @@ $participantesService = new ParticipantesService($pdo);
 $chesscomProfileService = new ChesscomProfileService($pdo);
 $chesscomPlayerStatsService = new ChesscomPlayerStatsService($pdo);
 $chesscomPlayerGameService = new ChesscomPlayerGameService($pdo);
-$resultadoService = new ResultadoService($pdo);
+$resultadosService = new ResultadosService($pdo);
 $log = new LogGestor();
 
 $caso = $analizarParticipantesService->obtenerPrimerAnalisisPendiente();
@@ -121,7 +149,7 @@ $mensaje = "Analizando participante_id={$caso->participante_id}, analizar_partic
     // 4. Buscar stats en Chess.com usando el servicio API
     $stats = $chesscomPlayerStatsApiService->fetchStats($username);
     if ($stats) {
-        $statsApiModel = ChesscomPlayerStatsApiConverter::toChesscomPlayerStats($stats, $participante->id, $username);
+        $statsApiModel = ChesscomPlayerStatsApiConverter::toChesscomPlayerStats($stats, $participante, $username);
 
         if (!$chesscomPlayerStatsService->existeStats($participante->id)) {
             $chesscomPlayerStatsService->crearStats($statsApiModel);
@@ -198,7 +226,7 @@ $mensaje = "Analizando participante_id={$caso->participante_id}, analizar_partic
             $gameApiModel = ChesscomPlayerGameApiConverter::toChesscomPlayerGame($gameApi, $participante->id, $username);
             $chesscomPlayerGameService->crearGame($gameApiModel);
             // Insertar en resultados
-            $resultadoModel = ChesscomGameApiModelToResultadoConverter::toResultado($gameApiModel, $participante->id);
+            $resultadoModel = ChesscomGameApiModelToResultadoBdConverter::toResultado($gameApi, $participante);
             $resultadoService->crearResultado($resultadoModel);
             $nuevas++;
             $logAnalisisService->crearLog(new LogAnalisis(

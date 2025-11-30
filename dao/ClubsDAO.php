@@ -14,14 +14,14 @@ class ClubsDAO
 
     public function getClubs(): array
     {
-        $stmt = $this->pdo->query("SELECT * FROM clubs");
+        $stmt = $this->pdo->query("SELECT * FROM clubs ORDER BY nombre ASC");
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
      // Clubs by id
     public function getClubsById(int $id): ?array
     {
-        $stmt = $this->pdo->prepare("SELECT * FROM clubs WHERE id = ?");
+        $stmt = $this->pdo->prepare("SELECT * FROM clubs WHERE id = ? ORDER BY nombre ASC");
         $stmt->execute([$id]);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result ?: null;
@@ -30,7 +30,7 @@ class ClubsDAO
     // Clubs by provincia
     public function getClubsByProvincia(int $provinciaId): array
     {
-        $stmt = $this->pdo->prepare("SELECT * FROM clubs WHERE provincia_id = ?");
+        $stmt = $this->pdo->prepare("SELECT * FROM clubs WHERE provincia_id = ? ORDER BY nombre ASC");
         $stmt->execute([$provinciaId]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

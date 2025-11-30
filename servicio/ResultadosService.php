@@ -1,7 +1,7 @@
 <?php
-// filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\servicio\ResultadoService.php
+// filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\servicio\ResultadosService.php
 
-require_once __DIR__ . '/../dao/ResultadoDAO.php';
+require_once __DIR__ . '/../dao/ResultadosDAO.php';
 
 class ResultadosService
 {
@@ -50,6 +50,19 @@ class ResultadosService
     public function getResultadosByParticipanteNickName(string $nickName): array
     {
         return $this->dao->getResultadosPorParticipanteNickName($nickName);
+    }
+
+    public function obtenerUltimoNumeroPartida(int $participanteId): int
+    {
+        return $this->dao->obtenerUltimoNumeroPartida($participanteId);
+    }
+    
+    /**
+     * DEPRECATED: Usar obtenerUltimoNumeroPartida() en su lugar
+     */
+    public function obtenerSiguienteNumeroPartida(int $participanteId): int
+    {
+        return $this->obtenerUltimoNumeroPartida($participanteId) + 1;
     }
 
 }

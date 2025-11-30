@@ -1,0 +1,14 @@
+[2025-08-25 18:41:08] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-25 18:42:58] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-25 18:42:58] [INFO] Participantes encontrados para analizar: 1
+[2025-08-25 18:42:58] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-08-25 18:42:58] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-08-25 18:44:00] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-25 18:44:00] [INFO] Participantes encontrados para analizar: 1
+[2025-08-25 18:44:00] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-25 18:44:00] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-08-25 20:04:10] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-25 20:04:10] [INFO] Participantes encontrados para analizar: 2
+[2025-08-25 20:04:10] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-25 20:04:10] [INFO] Insertado participante_id=11 en analizar_participantes.
+[2025-08-25 20:04:10] [INFO] Insertados 1 registros nuevos en analizar_participantes.

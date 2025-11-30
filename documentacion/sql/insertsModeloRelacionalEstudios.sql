@@ -1,6 +1,6 @@
 -- Universidad
 INSERT INTO universidad (id, nombre_eus, siglas_eus, nombre_esp, siglas_esp)
-VALUES (1, 'Euskal Herriko Unibertsitatea', 'EHU', 'Universidad del Pais Vasco', 'UPV');
+VALUES (1, 'Euskal Herriko Unibertsitatea', 'EHU', 'Universidad del Pais Vasco', 'EHU');
 
 -- Tipos de estudio
 INSERT INTO tipo_estudio (id, nombre_eus, nombre_esp) VALUES
