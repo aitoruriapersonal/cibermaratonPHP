@@ -1,0 +1,15 @@
+[2025-10-25 16:42:44] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-25 16:42:44] [INFO] Participantes encontrados para analizar: 2
+[2025-10-25 16:42:44] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-10-25 16:42:44] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-10-25 16:42:44] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-10-25 16:42:54] [INFO] Analizando participante_id=13, analizar_participantes.id=30
+[2025-10-25 16:42:55] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-10-25 16:43:36] [INFO] No hay casos pendientes en analizar_participantes. Proceso finalizado.
+[2025-10-25 16:43:40] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-25 16:43:40] [INFO] Participantes encontrados para analizar: 2
+[2025-10-25 16:43:40] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-10-25 16:43:40] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-10-25 16:43:40] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-10-25 16:43:46] [INFO] Analizando participante_id=13, analizar_participantes.id=31
+[2025-10-25 16:43:47] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.

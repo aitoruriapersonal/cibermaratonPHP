@@ -1,0 +1,25 @@
+[2025-08-30 19:03:02] [INFO] Analizando participante_id=9, analizar_participantes.id=1
+[2025-08-30 19:14:24] [INFO] Analizando participante_id=9, analizar_participantes.id=1
+[2025-08-30 19:14:25] [WARN] No existe perfil chess.com para nick=Prueba23FED78936Aitor1. Se marca como analizado.
+[2025-08-30 19:21:42] [INFO] Analizando participante_id=9, analizar_participantes.id=1
+[2025-08-30 19:21:43] [WARN] No existe perfil chess.com para nick=Prueba23FED78936Aitor1. Se marca como analizado.
+[2025-08-30 19:32:32] [INFO] Analizando participante_id=9, analizar_participantes.id=1
+[2025-08-30 19:32:34] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-30 20:11:57] [INFO] Analizando participante_id=9, analizar_participantes.id=1
+[2025-08-30 20:11:58] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-30 20:11:59] [INFO] Insertado nuevo chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-30 20:28:45] [INFO] Analizando participante_id=9, analizar_participantes.id=1
+[2025-08-30 20:28:46] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-30 20:28:47] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-30 20:28:48] [INFO] Insertado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-30 20:28:50] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 0
+[2025-08-30 20:28:50] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 0
+[2025-08-30 20:28:50] [INFO] Participante Prueba23FED78936Aitor1: partidas sincronizadas (0). Proceso terminado para este caso.
+[2025-08-30 20:43:55] [INFO] Analizando participante_id=11, analizar_participantes.id=2
+[2025-08-30 20:43:57] [WARN] No existe perfil chess.com para nick=Prueba23UPV11111Aitor1. Se marca como analizado.
+[2025-08-30 21:47:39] [INFO] Analizando participante_id=9, analizar_participantes.id=3
+[2025-08-30 21:47:40] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-30 21:47:40] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-30 21:47:41] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-30 21:47:42] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 5
+[2025-08-30 21:47:42] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 0

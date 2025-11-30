@@ -1,0 +1,885 @@
+[2025-09-06 17:02:46] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:02:46] [INFO] Participantes encontrados para analizar: 2
+[2025-09-06 17:02:46] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-09-06 17:02:46] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-09-06 17:02:46] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:03:28] [INFO] Analizando participante_id=13, analizar_participantes.id=16
+[2025-09-06 17:03:29] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:03:42] [INFO] Analizando participante_id=9, analizar_participantes.id=17
+[2025-09-06 17:03:44] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-09-06 17:03:44] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-09-06 17:03:46] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-09-06 17:03:47] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43
+[2025-09-06 17:03:47] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 15
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1756904391
+[2025-09-06 17:03:47] [INFO]  gameApi: 1756904391
+[2025-09-06 17:03:47] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675147258
+[2025-09-06 17:03:47] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1256 tras insertar nueva partida. Numero de partidas: 17. Puntos totales: 18572.
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1756904816
+[2025-09-06 17:03:47] [INFO]  gameApi: 1756904816
+[2025-09-06 17:03:47] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675402704
+[2025-09-06 17:03:47] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1276 tras insertar nueva partida. Numero de partidas: 19. Puntos totales: 37572.
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1756905395
+[2025-09-06 17:03:47] [INFO]  gameApi: 1756905395
+[2025-09-06 17:03:47] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675572346
+[2025-09-06 17:03:47] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1293 tras insertar nueva partida. Numero de partidas: 21. Puntos totales: 58572.
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1756909626
+[2025-09-06 17:03:47] [INFO]  gameApi: 1756909626
+[2025-09-06 17:03:47] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678189118
+[2025-09-06 17:03:47] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1311 tras insertar nueva partida. Numero de partidas: 23. Puntos totales: 81572.
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1756910107
+[2025-09-06 17:03:47] [INFO]  gameApi: 1756910107
+[2025-09-06 17:03:47] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678575382
+[2025-09-06 17:03:47] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1327 tras insertar nueva partida. Numero de partidas: 25. Puntos totales: 106572.
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1757000983
+[2025-09-06 17:03:47] [INFO]  gameApi: 1757000983
+[2025-09-06 17:03:47] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142721318376
+[2025-09-06 17:03:47] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1343 tras insertar nueva partida. Numero de partidas: 27. Puntos totales: 133572.
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1757002256
+[2025-09-06 17:03:47] [INFO]  gameApi: 1757002256
+[2025-09-06 17:03:47] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722037060
+[2025-09-06 17:03:47] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1359 tras insertar nueva partida. Numero de partidas: 29. Puntos totales: 162572.
+[2025-09-06 17:03:47] [INFO]  gameApiModel: 1757002787
+[2025-09-06 17:03:47] [INFO]  gameApi: 1757002787
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722730652
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1376 tras insertar nueva partida. Numero de partidas: 31. Puntos totales: 193572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757003374
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757003374
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723079998
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1390 tras insertar nueva partida. Numero de partidas: 33. Puntos totales: 226572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757003467
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757003467
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723437122
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1404 tras insertar nueva partida. Numero de partidas: 35. Puntos totales: 261572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757076987
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757076987
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142755876356
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1418 tras insertar nueva partida. Numero de partidas: 37. Puntos totales: 298572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757077518
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757077518
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756278066
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1429 tras insertar nueva partida. Numero de partidas: 39. Puntos totales: 337572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757077895
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757077895
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756538554
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1441 tras insertar nueva partida. Numero de partidas: 41. Puntos totales: 378572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757078472
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757078472
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756766988
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1450 tras insertar nueva partida. Numero de partidas: 43. Puntos totales: 421572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757079114
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757079114
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142757124082
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1461 tras insertar nueva partida. Numero de partidas: 45. Puntos totales: 466572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757149295
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757149295
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789029120
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1473 tras insertar nueva partida. Numero de partidas: 47. Puntos totales: 513572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757150090
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757150090
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789281016
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1485 tras insertar nueva partida. Numero de partidas: 49. Puntos totales: 562572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757156275
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757156275
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792349774
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1496 tras insertar nueva partida. Numero de partidas: 51. Puntos totales: 613572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757156719
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757156719
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792529904
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1506 tras insertar nueva partida. Numero de partidas: 53. Puntos totales: 666572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757157339
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757157339
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792758984
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1516 tras insertar nueva partida. Numero de partidas: 55. Puntos totales: 721572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757158043
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757158043
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142793075882
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1526 tras insertar nueva partida. Numero de partidas: 57. Puntos totales: 778572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757161722
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757161722
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795018838
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1536 tras insertar nueva partida. Numero de partidas: 59. Puntos totales: 837572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757162212
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757162212
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795436314
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 61. Puntos totales: 898572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757163321
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757163321
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795715138
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 63. Puntos totales: 961572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757164338
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757164338
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796328018
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 65. Puntos totales: 1026572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757164973
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757164973
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796903580
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 67. Puntos totales: 1093572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757165357
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757165357
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797281406
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1563 tras insertar nueva partida. Numero de partidas: 69. Puntos totales: 1162572.
+[2025-09-06 17:03:48] [INFO]  gameApiModel: 1757165984
+[2025-09-06 17:03:48] [INFO]  gameApi: 1757165984
+[2025-09-06 17:03:48] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797493434
+[2025-09-06 17:03:48] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1572 tras insertar nueva partida. Numero de partidas: 71. Puntos totales: 1233572.
+[2025-09-06 17:03:48] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 28.
+[2025-09-06 17:37:08] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:37:08] [INFO] Participantes encontrados para analizar: 2
+[2025-09-06 17:37:08] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-09-06 17:37:08] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 17:37:08] [INFO] Insertados 2 registros nuevos en analizar_participantes.
+[2025-09-06 17:37:13] [INFO] Analizando participante_id=9, analizar_participantes.id=18
+[2025-09-06 17:37:14] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-09-06 17:37:14] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-09-06 17:37:15] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-09-06 17:37:17] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43
+[2025-09-06 17:37:17] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 15
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1756904391
+[2025-09-06 17:37:17] [INFO]  gameApi: 1756904391
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675147258
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1256 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1756904816
+[2025-09-06 17:37:17] [INFO]  gameApi: 1756904816
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675402704
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1276 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1756905395
+[2025-09-06 17:37:17] [INFO]  gameApi: 1756905395
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675572346
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1293 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1756909626
+[2025-09-06 17:37:17] [INFO]  gameApi: 1756909626
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678189118
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1311 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1756910107
+[2025-09-06 17:37:17] [INFO]  gameApi: 1756910107
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678575382
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1327 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757000983
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757000983
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142721318376
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1343 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757002256
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757002256
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722037060
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1359 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757002787
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757002787
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722730652
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1376 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757003374
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757003374
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723079998
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1390 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757003467
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757003467
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723437122
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1404 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757076987
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757076987
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142755876356
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1418 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757077518
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757077518
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756278066
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1429 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757077895
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757077895
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756538554
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1441 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757078472
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757078472
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756766988
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1450 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757079114
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757079114
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142757124082
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1461 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757149295
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757149295
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789029120
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1473 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757150090
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757150090
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789281016
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1485 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757156275
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757156275
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792349774
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1496 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757156719
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757156719
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792529904
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1506 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757157339
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757157339
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792758984
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1516 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757158043
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757158043
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142793075882
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1526 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757161722
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757161722
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795018838
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1536 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757162212
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757162212
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795436314
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757163321
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757163321
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795715138
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757164338
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757164338
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796328018
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757164973
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757164973
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796903580
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:37:17] [INFO]  gameApiModel: 1757165357
+[2025-09-06 17:37:17] [INFO]  gameApi: 1757165357
+[2025-09-06 17:37:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797281406
+[2025-09-06 17:37:17] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1563 tras insertar nueva partida. Numero de partidas: . Puntos totales: 1572.
+[2025-09-06 17:38:39] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:38:39] [INFO] Participantes encontrados para analizar: 1
+[2025-09-06 17:38:39] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-09-06 17:38:39] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-09-06 17:38:45] [INFO] Analizando participante_id=13, analizar_participantes.id=19
+[2025-09-06 17:38:46] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:38:51] [INFO] No hay casos pendientes en analizar_participantes. Proceso finalizado.
+[2025-09-06 17:38:56] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:38:56] [INFO] Participantes encontrados para analizar: 1
+[2025-09-06 17:38:56] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 17:38:56] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:38:59] [INFO] Analizando participante_id=13, analizar_participantes.id=20
+[2025-09-06 17:39:00] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:41:01] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:41:01] [INFO] Participantes encontrados para analizar: 1
+[2025-09-06 17:41:01] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 17:41:01] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:41:06] [INFO] Analizando participante_id=13, analizar_participantes.id=21
+[2025-09-06 17:41:07] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:41:42] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:41:42] [INFO] Participantes encontrados para analizar: 1
+[2025-09-06 17:41:42] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 17:41:42] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:41:45] [INFO] Analizando participante_id=13, analizar_participantes.id=22
+[2025-09-06 17:41:47] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:43:26] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:43:26] [INFO] Participantes encontrados para analizar: 1
+[2025-09-06 17:43:26] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 17:43:26] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:43:34] [INFO] Analizando participante_id=13, analizar_participantes.id=23
+[2025-09-06 17:43:35] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:44:36] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:44:36] [INFO] Participantes encontrados para analizar: 2
+[2025-09-06 17:44:36] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-09-06 17:44:36] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 17:44:36] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:44:43] [INFO] Analizando participante_id=13, analizar_participantes.id=24
+[2025-09-06 17:44:44] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:44:47] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:44:47] [INFO] Participantes encontrados para analizar: 2
+[2025-09-06 17:44:47] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-09-06 17:44:47] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 17:44:47] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:47:40] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 17:47:40] [INFO] Participantes encontrados para analizar: 2
+[2025-09-06 17:47:40] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-09-06 17:47:40] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-09-06 17:47:40] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 17:47:46] [INFO] Analizando participante_id=13, analizar_participantes.id=25
+[2025-09-06 17:47:47] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-09-06 17:47:50] [INFO] Analizando participante_id=9, analizar_participantes.id=26
+[2025-09-06 17:47:52] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-09-06 17:47:52] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-09-06 17:47:53] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-09-06 17:47:54] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43
+[2025-09-06 17:47:54] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 15
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1756904391
+[2025-09-06 17:47:54] [INFO]  gameApi: 1756904391
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675147258
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1256 tras insertar nueva partida. Numero de partidas: . Puntos totales: 17572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1756904816
+[2025-09-06 17:47:54] [INFO]  gameApi: 1756904816
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675402704
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1276 tras insertar nueva partida. Numero de partidas: . Puntos totales: 34572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1756905395
+[2025-09-06 17:47:54] [INFO]  gameApi: 1756905395
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675572346
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1293 tras insertar nueva partida. Numero de partidas: . Puntos totales: 52572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1756909626
+[2025-09-06 17:47:54] [INFO]  gameApi: 1756909626
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678189118
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1311 tras insertar nueva partida. Numero de partidas: . Puntos totales: 71572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1756910107
+[2025-09-06 17:47:54] [INFO]  gameApi: 1756910107
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678575382
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1327 tras insertar nueva partida. Numero de partidas: . Puntos totales: 91572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757000983
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757000983
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142721318376
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1343 tras insertar nueva partida. Numero de partidas: . Puntos totales: 112572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757002256
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757002256
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722037060
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1359 tras insertar nueva partida. Numero de partidas: . Puntos totales: 134572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757002787
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757002787
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722730652
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1376 tras insertar nueva partida. Numero de partidas: . Puntos totales: 157572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757003374
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757003374
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723079998
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1390 tras insertar nueva partida. Numero de partidas: . Puntos totales: 181572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757003467
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757003467
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723437122
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1404 tras insertar nueva partida. Numero de partidas: . Puntos totales: 206572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757076987
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757076987
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142755876356
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1418 tras insertar nueva partida. Numero de partidas: . Puntos totales: 232572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757077518
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757077518
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756278066
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1429 tras insertar nueva partida. Numero de partidas: . Puntos totales: 259572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757077895
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757077895
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756538554
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1441 tras insertar nueva partida. Numero de partidas: . Puntos totales: 287572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757078472
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757078472
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756766988
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1450 tras insertar nueva partida. Numero de partidas: . Puntos totales: 316572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757079114
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757079114
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142757124082
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1461 tras insertar nueva partida. Numero de partidas: . Puntos totales: 346572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757149295
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757149295
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789029120
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1473 tras insertar nueva partida. Numero de partidas: . Puntos totales: 377572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757150090
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757150090
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789281016
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1485 tras insertar nueva partida. Numero de partidas: . Puntos totales: 409572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757156275
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757156275
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792349774
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1496 tras insertar nueva partida. Numero de partidas: . Puntos totales: 442572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757156719
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757156719
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792529904
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1506 tras insertar nueva partida. Numero de partidas: . Puntos totales: 476572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757157339
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757157339
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792758984
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1516 tras insertar nueva partida. Numero de partidas: . Puntos totales: 511572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757158043
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757158043
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142793075882
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1526 tras insertar nueva partida. Numero de partidas: . Puntos totales: 547572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757161722
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757161722
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795018838
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1536 tras insertar nueva partida. Numero de partidas: . Puntos totales: 584572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757162212
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757162212
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795436314
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: . Puntos totales: 622572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757163321
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757163321
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795715138
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: . Puntos totales: 661572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757164338
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757164338
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796328018
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: . Puntos totales: 701572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757164973
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757164973
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796903580
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: . Puntos totales: 742572.
+[2025-09-06 17:47:54] [INFO]  gameApiModel: 1757165357
+[2025-09-06 17:47:54] [INFO]  gameApi: 1757165357
+[2025-09-06 17:47:54] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797281406
+[2025-09-06 17:47:54] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1563 tras insertar nueva partida. Numero de partidas: . Puntos totales: 784572.
+[2025-09-06 17:51:45] [INFO] Analizando participante_id=9, analizar_participantes.id=26
+[2025-09-06 17:51:47] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-09-06 17:51:47] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-09-06 17:51:48] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-09-06 17:51:49] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43
+[2025-09-06 17:51:49] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 15
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1756904391
+[2025-09-06 17:51:49] [INFO]  gameApi: 1756904391
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675147258
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1256 tras insertar nueva partida. Numero de partidas: 16. Puntos totales: 17572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1756904816
+[2025-09-06 17:51:49] [INFO]  gameApi: 1756904816
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675402704
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1276 tras insertar nueva partida. Numero de partidas: 17. Puntos totales: 34572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1756905395
+[2025-09-06 17:51:49] [INFO]  gameApi: 1756905395
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675572346
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1293 tras insertar nueva partida. Numero de partidas: 18. Puntos totales: 52572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1756909626
+[2025-09-06 17:51:49] [INFO]  gameApi: 1756909626
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678189118
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1311 tras insertar nueva partida. Numero de partidas: 19. Puntos totales: 71572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1756910107
+[2025-09-06 17:51:49] [INFO]  gameApi: 1756910107
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678575382
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1327 tras insertar nueva partida. Numero de partidas: 20. Puntos totales: 91572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757000983
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757000983
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142721318376
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1343 tras insertar nueva partida. Numero de partidas: 21. Puntos totales: 112572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757002256
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757002256
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722037060
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1359 tras insertar nueva partida. Numero de partidas: 22. Puntos totales: 134572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757002787
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757002787
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722730652
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1376 tras insertar nueva partida. Numero de partidas: 23. Puntos totales: 157572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757003374
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757003374
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723079998
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1390 tras insertar nueva partida. Numero de partidas: 24. Puntos totales: 181572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757003467
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757003467
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723437122
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1404 tras insertar nueva partida. Numero de partidas: 25. Puntos totales: 206572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757076987
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757076987
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142755876356
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1418 tras insertar nueva partida. Numero de partidas: 26. Puntos totales: 232572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757077518
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757077518
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756278066
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1429 tras insertar nueva partida. Numero de partidas: 27. Puntos totales: 259572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757077895
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757077895
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756538554
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1441 tras insertar nueva partida. Numero de partidas: 28. Puntos totales: 287572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757078472
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757078472
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756766988
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1450 tras insertar nueva partida. Numero de partidas: 29. Puntos totales: 316572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757079114
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757079114
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142757124082
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1461 tras insertar nueva partida. Numero de partidas: 30. Puntos totales: 346572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757149295
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757149295
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789029120
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1473 tras insertar nueva partida. Numero de partidas: 31. Puntos totales: 377572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757150090
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757150090
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789281016
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1485 tras insertar nueva partida. Numero de partidas: 32. Puntos totales: 409572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757156275
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757156275
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792349774
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1496 tras insertar nueva partida. Numero de partidas: 33. Puntos totales: 442572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757156719
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757156719
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792529904
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1506 tras insertar nueva partida. Numero de partidas: 34. Puntos totales: 476572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757157339
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757157339
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792758984
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1516 tras insertar nueva partida. Numero de partidas: 35. Puntos totales: 511572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757158043
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757158043
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142793075882
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1526 tras insertar nueva partida. Numero de partidas: 36. Puntos totales: 547572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757161722
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757161722
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795018838
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1536 tras insertar nueva partida. Numero de partidas: 37. Puntos totales: 584572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757162212
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757162212
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795436314
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 38. Puntos totales: 622572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757163321
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757163321
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795715138
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 39. Puntos totales: 661572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757164338
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757164338
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796328018
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 40. Puntos totales: 701572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757164973
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757164973
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796903580
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 41. Puntos totales: 742572.
+[2025-09-06 17:51:49] [INFO]  gameApiModel: 1757165357
+[2025-09-06 17:51:49] [INFO]  gameApi: 1757165357
+[2025-09-06 17:51:49] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797281406
+[2025-09-06 17:51:49] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1563 tras insertar nueva partida. Numero de partidas: 42. Puntos totales: 784572.
+[2025-09-06 18:02:01] [INFO] Analizando participante_id=9, analizar_participantes.id=26
+[2025-09-06 18:02:01] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-09-06 18:02:01] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-09-06 18:02:02] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-09-06 18:02:03] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43
+[2025-09-06 18:02:03] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 15
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1756904391
+[2025-09-06 18:02:03] [INFO]  gameApi: 1756904391
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675147258
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1256 tras insertar nueva partida. Numero de partidas: 16. Puntos totales: 17572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1756904816
+[2025-09-06 18:02:03] [INFO]  gameApi: 1756904816
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675402704
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1276 tras insertar nueva partida. Numero de partidas: 17. Puntos totales: 34572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1756905395
+[2025-09-06 18:02:03] [INFO]  gameApi: 1756905395
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675572346
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1293 tras insertar nueva partida. Numero de partidas: 18. Puntos totales: 52572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1756909626
+[2025-09-06 18:02:03] [INFO]  gameApi: 1756909626
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678189118
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1311 tras insertar nueva partida. Numero de partidas: 19. Puntos totales: 71572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1756910107
+[2025-09-06 18:02:03] [INFO]  gameApi: 1756910107
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678575382
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1327 tras insertar nueva partida. Numero de partidas: 20. Puntos totales: 91572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757000983
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757000983
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142721318376
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1343 tras insertar nueva partida. Numero de partidas: 21. Puntos totales: 112572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757002256
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757002256
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722037060
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1359 tras insertar nueva partida. Numero de partidas: 22. Puntos totales: 134572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757002787
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757002787
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722730652
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1376 tras insertar nueva partida. Numero de partidas: 23. Puntos totales: 157572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757003374
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757003374
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723079998
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1390 tras insertar nueva partida. Numero de partidas: 24. Puntos totales: 181572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757003467
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757003467
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723437122
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1404 tras insertar nueva partida. Numero de partidas: 25. Puntos totales: 206572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757076987
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757076987
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142755876356
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1418 tras insertar nueva partida. Numero de partidas: 26. Puntos totales: 232572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757077518
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757077518
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756278066
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1429 tras insertar nueva partida. Numero de partidas: 27. Puntos totales: 259572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757077895
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757077895
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756538554
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1441 tras insertar nueva partida. Numero de partidas: 28. Puntos totales: 287572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757078472
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757078472
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756766988
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1450 tras insertar nueva partida. Numero de partidas: 29. Puntos totales: 316572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757079114
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757079114
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142757124082
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1461 tras insertar nueva partida. Numero de partidas: 30. Puntos totales: 346572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757149295
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757149295
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789029120
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1473 tras insertar nueva partida. Numero de partidas: 31. Puntos totales: 377572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757150090
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757150090
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789281016
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1485 tras insertar nueva partida. Numero de partidas: 32. Puntos totales: 409572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757156275
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757156275
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792349774
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1496 tras insertar nueva partida. Numero de partidas: 33. Puntos totales: 442572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757156719
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757156719
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792529904
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1506 tras insertar nueva partida. Numero de partidas: 34. Puntos totales: 476572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757157339
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757157339
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792758984
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1516 tras insertar nueva partida. Numero de partidas: 35. Puntos totales: 511572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757158043
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757158043
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142793075882
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1526 tras insertar nueva partida. Numero de partidas: 36. Puntos totales: 547572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757161722
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757161722
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795018838
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1536 tras insertar nueva partida. Numero de partidas: 37. Puntos totales: 584572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757162212
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757162212
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795436314
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 38. Puntos totales: 622572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757163321
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757163321
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795715138
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 39. Puntos totales: 661572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757164338
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757164338
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796328018
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 40. Puntos totales: 701572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757164973
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757164973
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796903580
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 41. Puntos totales: 742572.
+[2025-09-06 18:02:03] [INFO]  gameApiModel: 1757165357
+[2025-09-06 18:02:03] [INFO]  gameApi: 1757165357
+[2025-09-06 18:02:03] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797281406
+[2025-09-06 18:02:03] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1563 tras insertar nueva partida. Numero de partidas: 42. Puntos totales: 784572.
+[2025-09-06 18:02:03] [INFO] Participante Prueba23FED78936Aitor1 pasa a estado 0 (Terminado) al alcanzar 42 partidas.
+[2025-09-06 18:02:03] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 27.
+[2025-09-06 18:08:38] [INFO] Analizando participante_id=9, analizar_participantes.id=26
+[2025-09-06 18:08:39] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-09-06 18:08:39] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-09-06 18:08:40] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-09-06 18:08:41] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43
+[2025-09-06 18:08:41] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 15
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1756904391
+[2025-09-06 18:08:41] [INFO]  gameApi: 1756904391
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 16) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675147258
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1256 tras insertar nueva partida. Numero de partidas: 16. Puntos totales: 17256.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1756904816
+[2025-09-06 18:08:41] [INFO]  gameApi: 1756904816
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 17) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675402704
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1276 tras insertar nueva partida. Numero de partidas: 17. Puntos totales: 18276.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1756905395
+[2025-09-06 18:08:41] [INFO]  gameApi: 1756905395
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 18) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675572346
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1293 tras insertar nueva partida. Numero de partidas: 18. Puntos totales: 19293.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1756909626
+[2025-09-06 18:08:41] [INFO]  gameApi: 1756909626
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 19) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678189118
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1311 tras insertar nueva partida. Numero de partidas: 19. Puntos totales: 20311.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1756910107
+[2025-09-06 18:08:41] [INFO]  gameApi: 1756910107
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 20) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678575382
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1327 tras insertar nueva partida. Numero de partidas: 20. Puntos totales: 21327.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757000983
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757000983
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 21) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142721318376
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1343 tras insertar nueva partida. Numero de partidas: 21. Puntos totales: 22343.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757002256
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757002256
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 22) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722037060
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1359 tras insertar nueva partida. Numero de partidas: 22. Puntos totales: 23359.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757002787
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757002787
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 23) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722730652
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1376 tras insertar nueva partida. Numero de partidas: 23. Puntos totales: 24376.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757003374
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757003374
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 24) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723079998
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1390 tras insertar nueva partida. Numero de partidas: 24. Puntos totales: 25390.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757003467
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757003467
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 25) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723437122
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1404 tras insertar nueva partida. Numero de partidas: 25. Puntos totales: 26404.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757076987
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757076987
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 26) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142755876356
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1418 tras insertar nueva partida. Numero de partidas: 26. Puntos totales: 27418.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757077518
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757077518
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 27) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756278066
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1429 tras insertar nueva partida. Numero de partidas: 27. Puntos totales: 28429.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757077895
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757077895
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 28) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756538554
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1441 tras insertar nueva partida. Numero de partidas: 28. Puntos totales: 29441.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757078472
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757078472
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 29) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756766988
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1450 tras insertar nueva partida. Numero de partidas: 29. Puntos totales: 30450.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757079114
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757079114
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 30) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142757124082
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1461 tras insertar nueva partida. Numero de partidas: 30. Puntos totales: 31461.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757149295
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757149295
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 31) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789029120
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1473 tras insertar nueva partida. Numero de partidas: 31. Puntos totales: 32473.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757150090
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757150090
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 32) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789281016
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1485 tras insertar nueva partida. Numero de partidas: 32. Puntos totales: 33485.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757156275
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757156275
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 33) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792349774
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1496 tras insertar nueva partida. Numero de partidas: 33. Puntos totales: 34496.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757156719
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757156719
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 34) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792529904
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1506 tras insertar nueva partida. Numero de partidas: 34. Puntos totales: 35506.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757157339
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757157339
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 35) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792758984
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1516 tras insertar nueva partida. Numero de partidas: 35. Puntos totales: 36516.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757158043
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757158043
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 36) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142793075882
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1526 tras insertar nueva partida. Numero de partidas: 36. Puntos totales: 37526.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757161722
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757161722
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 37) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795018838
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1536 tras insertar nueva partida. Numero de partidas: 37. Puntos totales: 38536.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757162212
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757162212
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 38) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795436314
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 38. Puntos totales: 39546.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757163321
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757163321
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 39) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795715138
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 39. Puntos totales: 40555.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757164338
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757164338
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 40) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796328018
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 40. Puntos totales: 41546.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757164973
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757164973
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 41) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796903580
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 41. Puntos totales: 42555.
+[2025-09-06 18:08:41] [INFO]  gameApiModel: 1757165357
+[2025-09-06 18:08:41] [INFO]  gameApi: 1757165357
+[2025-09-06 18:08:41] [INFO] Insertada nueva partida (Num: 42) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797281406
+[2025-09-06 18:08:41] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1563 tras insertar nueva partida. Numero de partidas: 42. Puntos totales: 43563.
+[2025-09-06 18:08:41] [INFO] Participante Prueba23FED78936Aitor1 pasa a estado 0 (Terminado) al alcanzar 42 partidas.
+[2025-09-06 18:08:41] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 27.
+[2025-09-06 18:09:11] [INFO] No hay casos pendientes en analizar_participantes. Proceso finalizado.
+[2025-09-06 18:25:52] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-09-06 18:25:52] [INFO] Participantes encontrados para analizar: 2
+[2025-09-06 18:25:52] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-09-06 18:25:52] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-09-06 18:25:52] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-09-06 18:25:57] [INFO] Analizando participante_id=9, analizar_participantes.id=26
+[2025-09-06 18:25:58] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-09-06 18:25:58] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-09-06 18:25:59] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-09-06 18:26:00] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43
+[2025-09-06 18:26:00] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 13
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1756652132
+[2025-09-06 18:26:00] [INFO]  gameApi: 1756652132
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 14) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142560101432
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1211 tras insertar nueva partida. Numero de partidas: 14. Puntos totales: 15211.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1756653287
+[2025-09-06 18:26:00] [INFO]  gameApi: 1756653287
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 15) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142560530588
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1234 tras insertar nueva partida. Numero de partidas: 15. Puntos totales: 16234.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1756904391
+[2025-09-06 18:26:00] [INFO]  gameApi: 1756904391
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 16) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675147258
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1256 tras insertar nueva partida. Numero de partidas: 16. Puntos totales: 17256.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1756904816
+[2025-09-06 18:26:00] [INFO]  gameApi: 1756904816
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 17) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675402704
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1276 tras insertar nueva partida. Numero de partidas: 17. Puntos totales: 18276.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1756905395
+[2025-09-06 18:26:00] [INFO]  gameApi: 1756905395
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 18) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142675572346
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1293 tras insertar nueva partida. Numero de partidas: 18. Puntos totales: 19293.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1756909626
+[2025-09-06 18:26:00] [INFO]  gameApi: 1756909626
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 19) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678189118
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1311 tras insertar nueva partida. Numero de partidas: 19. Puntos totales: 20311.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1756910107
+[2025-09-06 18:26:00] [INFO]  gameApi: 1756910107
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 20) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142678575382
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1327 tras insertar nueva partida. Numero de partidas: 20. Puntos totales: 21327.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757000983
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757000983
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 21) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142721318376
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1343 tras insertar nueva partida. Numero de partidas: 21. Puntos totales: 22343.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757002256
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757002256
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 22) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722037060
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1359 tras insertar nueva partida. Numero de partidas: 22. Puntos totales: 23359.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757002787
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757002787
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 23) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142722730652
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1376 tras insertar nueva partida. Numero de partidas: 23. Puntos totales: 24376.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757003374
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757003374
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 24) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723079998
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1390 tras insertar nueva partida. Numero de partidas: 24. Puntos totales: 25390.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757003467
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757003467
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 25) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142723437122
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1404 tras insertar nueva partida. Numero de partidas: 25. Puntos totales: 26404.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757076987
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757076987
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 26) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142755876356
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1418 tras insertar nueva partida. Numero de partidas: 26. Puntos totales: 27418.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757077518
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757077518
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 27) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756278066
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1429 tras insertar nueva partida. Numero de partidas: 27. Puntos totales: 28429.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757077895
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757077895
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 28) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756538554
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1441 tras insertar nueva partida. Numero de partidas: 28. Puntos totales: 29441.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757078472
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757078472
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 29) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142756766988
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1450 tras insertar nueva partida. Numero de partidas: 29. Puntos totales: 30450.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757079114
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757079114
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 30) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142757124082
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1461 tras insertar nueva partida. Numero de partidas: 30. Puntos totales: 31461.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757149295
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757149295
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 31) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789029120
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1473 tras insertar nueva partida. Numero de partidas: 31. Puntos totales: 32473.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757150090
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757150090
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 32) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142789281016
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1485 tras insertar nueva partida. Numero de partidas: 32. Puntos totales: 33485.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757156275
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757156275
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 33) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792349774
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1496 tras insertar nueva partida. Numero de partidas: 33. Puntos totales: 34496.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757156719
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757156719
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 34) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792529904
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1506 tras insertar nueva partida. Numero de partidas: 34. Puntos totales: 35506.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757157339
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757157339
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 35) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142792758984
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1516 tras insertar nueva partida. Numero de partidas: 35. Puntos totales: 36516.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757158043
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757158043
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 36) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142793075882
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1526 tras insertar nueva partida. Numero de partidas: 36. Puntos totales: 37526.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757161722
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757161722
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 37) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795018838
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1536 tras insertar nueva partida. Numero de partidas: 37. Puntos totales: 38536.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757162212
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757162212
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 38) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795436314
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 38. Puntos totales: 39546.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757163321
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757163321
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 39) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142795715138
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 39. Puntos totales: 40555.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757164338
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757164338
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 40) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796328018
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1546 tras insertar nueva partida. Numero de partidas: 40. Puntos totales: 41546.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757164973
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757164973
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 41) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142796903580
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1555 tras insertar nueva partida. Numero de partidas: 41. Puntos totales: 42555.
+[2025-09-06 18:26:00] [INFO]  gameApiModel: 1757165357
+[2025-09-06 18:26:00] [INFO]  gameApi: 1757165357
+[2025-09-06 18:26:00] [INFO] Insertada nueva partida (Num: 42) para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142797281406
+[2025-09-06 18:26:00] [INFO] Actualizados puntos del participante Prueba23FED78936Aitor1 a 1563 tras insertar nueva partida. Numero de partidas: 42. Puntos totales: 43563.
+[2025-09-06 18:26:00] [INFO] Participante Prueba23FED78936Aitor1 pasa a estado 0 (Terminado) al alcanzar 42 partidas.
+[2025-09-06 18:26:00] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 29.

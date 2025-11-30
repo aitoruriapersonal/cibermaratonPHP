@@ -1,0 +1,32 @@
+[2025-10-04 11:50:42] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-04 11:50:42] [INFO] Participantes encontrados para analizar: 0
+[2025-10-04 11:50:42] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-10-04 11:51:58] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-04 11:51:58] [INFO] Participantes encontrados para analizar: 0
+[2025-10-04 11:51:58] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-10-04 11:52:10] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-04 11:52:10] [INFO] Participantes encontrados para analizar: 0
+[2025-10-04 11:52:10] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-10-04 11:52:51] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-04 11:52:51] [INFO] Participantes encontrados para analizar: 0
+[2025-10-04 11:52:51] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-10-04 11:54:27] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-04 11:54:27] [INFO] Participantes encontrados para analizar: 1
+[2025-10-04 11:54:27] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-10-04 11:54:27] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-10-04 11:55:24] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-04 11:55:24] [INFO] Participantes encontrados para analizar: 1
+[2025-10-04 11:55:24] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-10-04 11:55:24] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-10-04 11:55:58] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-10-04 11:55:58] [INFO] Participantes encontrados para analizar: 2
+[2025-10-04 11:55:58] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-10-04 11:55:58] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-10-04 11:55:58] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-10-04 11:56:37] [INFO] Analizando participante_id=13, analizar_participantes.id=28
+[2025-10-04 11:56:39] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-10-04 11:57:48] [INFO] Analizando participante_id=9, analizar_participantes.id=29
+[2025-10-04 11:57:50] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-10-04 11:57:50] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-10-04 11:57:52] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-10-04 11:57:54] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 43

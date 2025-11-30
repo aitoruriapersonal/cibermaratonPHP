@@ -1,0 +1,198 @@
+[2025-08-31 15:02:47] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:02:47] [INFO] Participantes encontrados para analizar: 0
+[2025-08-31 15:02:47] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-08-31 15:03:13] [INFO] No hay casos pendientes en analizar_participantes. Proceso finalizado.
+[2025-08-31 15:10:11] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:10:11] [INFO] Participantes encontrados para analizar: 0
+[2025-08-31 15:10:11] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-08-31 15:19:35] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:19:35] [INFO] Participantes encontrados para analizar: 0
+[2025-08-31 15:19:35] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-08-31 15:27:04] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:27:04] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 15:27:05] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-08-31 15:27:05] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-08-31 15:27:05] [INFO] Insertados 2 registros nuevos en analizar_participantes.
+[2025-08-31 15:28:26] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:28:26] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 15:28:26] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-31 15:28:26] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-08-31 15:28:26] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-08-31 15:28:51] [INFO] Analizando participante_id=9, analizar_participantes.id=4
+[2025-08-31 15:28:52] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-31 15:28:52] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-31 15:28:54] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-31 15:28:56] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 10
+[2025-08-31 15:28:56] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 0
+[2025-08-31 15:35:37] [INFO] Analizando participante_id=13, analizar_participantes.id=5
+[2025-08-31 15:35:38] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-08-31 15:37:09] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:37:09] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 15:37:09] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-31 15:37:09] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-08-31 15:37:09] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-08-31 15:37:49] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:37:49] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 15:37:49] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-08-31 15:37:49] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-08-31 15:37:49] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-08-31 15:38:01] [INFO] Analizando participante_id=13, analizar_participantes.id=6
+[2025-08-31 15:38:02] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-08-31 15:39:13] [INFO] Analizando participante_id=9, analizar_participantes.id=7
+[2025-08-31 15:39:14] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-31 15:39:14] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-31 15:39:16] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-31 15:39:17] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 10
+[2025-08-31 15:39:17] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 0
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530202084
+[2025-08-31 15:39:17] [INFO] Participante Prueba23FED78936Aitor1 pasa a estado 1 (Activo).
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530441722
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530627342
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530755220
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142531109608
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142545922090
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546102820
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546173752
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546355622
+[2025-08-31 15:39:17] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546485730
+[2025-08-31 15:39:17] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 10.
+[2025-08-31 15:55:00] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 15:55:00] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 15:55:00] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-08-31 15:55:00] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-08-31 15:55:00] [INFO] Insertados 2 registros nuevos en analizar_participantes.
+[2025-08-31 15:55:04] [INFO] Analizando participante_id=9, analizar_participantes.id=8
+[2025-08-31 15:55:06] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-31 15:55:06] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-31 15:55:07] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-31 15:55:09] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 10
+[2025-08-31 15:55:09] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 0
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530202084
+[2025-08-31 15:55:09] [INFO] Participante Prueba23FED78936Aitor1 pasa a estado 1 (Activo).
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530441722
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530627342
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530755220
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142531109608
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142545922090
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546102820
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546173752
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546355622
+[2025-08-31 15:55:09] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546485730
+[2025-08-31 15:55:09] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 10.
+[2025-08-31 16:03:30] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 16:03:30] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 16:03:30] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-08-31 16:03:30] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-08-31 16:03:30] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-08-31 16:03:33] [INFO] Analizando participante_id=13, analizar_participantes.id=9
+[2025-08-31 16:03:35] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-08-31 16:03:40] [INFO] Analizando participante_id=9, analizar_participantes.id=10
+[2025-08-31 16:03:41] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-31 16:03:41] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-31 16:03:43] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-31 16:03:44] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 10
+[2025-08-31 16:03:44] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 0
+[2025-08-31 16:08:16] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 16:08:16] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 16:08:16] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-31 16:08:16] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-08-31 16:08:16] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-08-31 16:08:19] [INFO] Analizando participante_id=13, analizar_participantes.id=11
+[2025-08-31 16:08:20] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-08-31 16:08:25] [INFO] No hay casos pendientes en analizar_participantes. Proceso finalizado.
+[2025-08-31 16:08:31] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 16:08:31] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 16:08:31] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-31 16:08:31] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-08-31 16:08:31] [INFO] Insertados 1 registros nuevos en analizar_participantes.
+[2025-08-31 16:08:34] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 16:08:34] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 16:08:34] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-31 16:08:34] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-08-31 16:08:34] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-08-31 16:08:41] [INFO] Analizando participante_id=13, analizar_participantes.id=12
+[2025-08-31 16:08:43] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-08-31 16:08:51] [INFO] No hay casos pendientes en analizar_participantes. Proceso finalizado.
+[2025-08-31 16:10:14] [INFO] Analizando participante_id=9, analizar_participantes.id=10
+[2025-08-31 16:10:15] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-31 16:10:15] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-31 16:10:17] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-31 16:10:18] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 10
+[2025-08-31 16:10:18] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 0
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756580799
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756580799
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530202084
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756581183
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756581183
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530441722
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756581437
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756581437
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530627342
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756582146
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756582146
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142530755220
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756582663
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756582663
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142531109608
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756623821
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756623821
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142545922090
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756624006
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756624006
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546102820
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756624451
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756624451
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546173752
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756624750
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756624750
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546355622
+[2025-08-31 16:10:18] [INFO]  gameApiModel: 1756625562
+[2025-08-31 16:10:18] [INFO]  gameApi: 1756625562
+[2025-08-31 16:10:18] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142546485730
+[2025-08-31 16:10:18] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 10.
+[2025-08-31 17:15:06] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 17:15:06] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 17:15:06] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-08-31 17:15:06] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-08-31 17:15:06] [INFO] Insertados 2 registros nuevos en analizar_participantes.
+[2025-08-31 17:15:11] [INFO] Analizando participante_id=9, analizar_participantes.id=13
+[2025-08-31 17:15:12] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-31 17:15:12] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-31 17:15:14] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-31 17:15:16] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 15
+[2025-08-31 17:15:16] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 10
+[2025-08-31 17:15:16] [INFO]  gameApiModel: 1756649958
+[2025-08-31 17:15:16] [INFO]  gameApi: 1756649958
+[2025-08-31 17:15:16] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142558972706
+[2025-08-31 17:15:16] [INFO]  gameApiModel: 1756650270
+[2025-08-31 17:15:16] [INFO]  gameApi: 1756650270
+[2025-08-31 17:15:16] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142559240684
+[2025-08-31 17:15:16] [INFO]  gameApiModel: 1756651425
+[2025-08-31 17:15:16] [INFO]  gameApi: 1756651425
+[2025-08-31 17:15:16] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142559425570
+[2025-08-31 17:15:16] [INFO]  gameApiModel: 1756652132
+[2025-08-31 17:15:16] [INFO]  gameApi: 1756652132
+[2025-08-31 17:15:16] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142560101432
+[2025-08-31 17:15:16] [INFO]  gameApiModel: 1756653287
+[2025-08-31 17:15:16] [INFO]  gameApi: 1756653287
+[2025-08-31 17:15:16] [INFO] Insertada nueva partida para Prueba23FED78936Aitor1: https://www.chess.com/game/live/142560530588
+[2025-08-31 17:15:16] [INFO] Finalizado análisis para participante_id=9. Partidas nuevas insertadas: 5.
+[2025-08-31 17:29:21] [INFO] Analizando participante_id=13, analizar_participantes.id=14
+[2025-08-31 17:29:23] [WARN] No existe perfil chess.com para nick=23UPV11111Aitor1. Se marca como analizado.
+[2025-08-31 17:29:30] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 17:29:30] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 17:29:30] [INFO] Insertado participante_id=9 en analizar_participantes.
+[2025-08-31 17:29:30] [INFO] Insertado participante_id=13 en analizar_participantes.
+[2025-08-31 17:29:30] [INFO] Insertados 2 registros nuevos en analizar_participantes.
+[2025-08-31 17:29:34] [INFO] Inicio de búsqueda de casos a analizar.
+[2025-08-31 17:29:34] [INFO] Participantes encontrados para analizar: 2
+[2025-08-31 17:29:34] [WARN] Participante_id=9 ya tiene un análisis pendiente o en curso.
+[2025-08-31 17:29:34] [WARN] Participante_id=13 ya tiene un análisis pendiente o en curso.
+[2025-08-31 17:29:34] [INFO] No se insertaron nuevos registros en analizar_participantes.
+[2025-08-31 17:29:45] [INFO] Analizando participante_id=9, analizar_participantes.id=15
+[2025-08-31 17:29:46] [INFO] Perfil chess.com encontrado para Prueba23FED78936Aitor1
+[2025-08-31 17:29:46] [INFO] Actualizado chesscom_profile para Prueba23FED78936Aitor1.
+[2025-08-31 17:29:48] [INFO] Actualizado chesscom_player_stats para Prueba23FED78936Aitor1.
+[2025-08-31 17:29:49] [INFO] Partidas chess.com obtenidas para Prueba23FED78936Aitor1: 15
+[2025-08-31 17:29:49] [INFO] Resultados en base de datos para Prueba23FED78936Aitor1: 15
+[2025-08-31 17:29:49] [INFO] Participante Prueba23FED78936Aitor1: partidas sincronizadas (15). Proceso terminado para este caso.
