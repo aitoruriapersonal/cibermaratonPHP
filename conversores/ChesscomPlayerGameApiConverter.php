@@ -1,78 +1,140 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\conversores\ChesscomPlayerGameApiConverter.php
 
-require_once __DIR__ . '/../modelo/ChesscomPlayerGame.php';
 require_once __DIR__ . '/../modelo/chesscomJSON/ChesscomPlayerGameApiModel.php';
+require_once __DIR__ . '/../modelo/ChesscomPlayerGame.php';
 
 class ChesscomPlayerGameApiConverter
 {
-    // Convierte un modelo API a modelo de tabla
-    public static function toChesscomPlayerGame(
-        ChesscomPlayerGameApiModel $apiModel,
-        int $participante_id,
-        string $username
-    ): ChesscomPlayerGame {
-        return new ChesscomPlayerGame(
-            null, // id autoincremental
-            $participante_id,
-            $username,
-            $apiModel->url,
-            $apiModel->pgn ?? null,
-            $apiModel->time_control ?? null,
-            $apiModel->end_time ?? null,
-            isset($apiModel->rated) ? (int)$apiModel->rated : null,
-            $apiModel->accuracies['white'] ?? null,
-            $apiModel->accuracies['black'] ?? null,
-            $apiModel->fen ?? null,
-            $apiModel->time_class ?? null,
-            $apiModel->rules ?? null,
-            $apiModel->white['rating'] ?? null,
-            $apiModel->white['result'] ?? null,
-            $apiModel->white['@id'] ?? null,
-            $apiModel->white['username'] ?? null,
-            $apiModel->white['uuid'] ?? null,
-            $apiModel->black['rating'] ?? null,
-            $apiModel->black['result'] ?? null,
-            $apiModel->black['@id'] ?? null,
-            $apiModel->black['username'] ?? null,
-            $apiModel->black['uuid'] ?? null,
-            $apiModel->eco ?? null,
-            date('Y-m-d H:i:s'),
-            null
-        );
+    // Método principal que usa el bot
+    public function convert(ChesscomPlayerGameApiModel $apiModel, $participanteId, $username): ?ChesscomPlayerGame
+    {
+        echo '<br/>DEBUG: Iniciando conversión con nuevo patrón ChesscomPlayerGame';
+        
+        try {
+            // Crear con constructor vacío
+            $chesscomPlayerGame = new ChesscomPlayerGame();
+            echo '<br/>DEBUG: ✓ Constructor vacío creado (fechaAlta=' . $chesscomPlayerGame->fechaAlta . ', fechaMod=' . ($chesscomPlayerGame->fechaModificacion ?? 'NULL') . ')';
+            
+            // Establecer datos por grupos
+            $chesscomPlayerGame->setDatosGenerales(
+                0, // gameId autoincremental
+                $participanteId,
+                $username, // AÑADIR ESTA LÍNEA
+                $apiModel->url,
+                $apiModel->pgn
+            );
+            echo '<br/>DEBUG: ✓ Datos generales establecidos';
+            
+            $chesscomPlayerGame->setDatosBlancas(
+                $apiModel->white_username,
+                $apiModel->white_rating,
+                $apiModel->white_result,
+                $apiModel->accuracy_white,
+                $apiModel->white_uuid
+            );
+            echo '<br/>DEBUG: ✓ Datos blancas establecidos';
+            
+            $chesscomPlayerGame->setDatosNegras(
+                $apiModel->black_username,
+                $apiModel->black_rating,
+                $apiModel->black_result,
+                $apiModel->accuracy_black,
+                $apiModel->black_uuid
+            );
+            echo '<br/>DEBUG: ✓ Datos negras establecidos';
+            
+            $chesscomPlayerGame->setDatosPartida(
+                $apiModel->time_control,
+                $apiModel->time_class,
+                $apiModel->rules,
+                $apiModel->rated,
+                $apiModel->end_time,
+                $apiModel->start_time,
+                $apiModel->eco,
+                $apiModel->tournament,
+                $apiModel->match
+            );
+            echo '<br/>DEBUG: ✓ Datos partida establecidos';
+            
+            // IMPORTANTE: Finalizar la configuración inicial
+            $chesscomPlayerGame->finalizarConfiguracion();
+            echo '<br/>DEBUG: ✓ Configuración inicial finalizada (fechaAlta=' . $chesscomPlayerGame->fechaAlta . ', fechaMod=' . ($chesscomPlayerGame->fechaModificacion ?? 'NULL') . ')';
+            
+            // Validar
+            $errores = $chesscomPlayerGame->validar();
+            if (!empty($errores)) {
+                echo '<br/>WARNING: Objeto incompleto: ' . implode(', ', $errores);
+            }
+            
+            echo '<br/>DEBUG: ✓ Conversión exitosa - ' . $chesscomPlayerGame;
+            return $chesscomPlayerGame;
+            
+        } catch (Exception $e) {
+            echo '<br/>ERROR FATAL en conversión: ' . $e->getMessage();
+            return null;
+        } catch (Error $e) {
+            echo '<br/>ERROR FATAL (Error) en conversión: ' . $e->getMessage();
+            return null;
+        }
     }
 
-    // Convierte un modelo de tabla a modelo API
-    public static function toChesscomPlayerGameApiModel(ChesscomPlayerGame $game): ChesscomPlayerGameApiModel
+    // Método adicional para verificar el constructor de ChesscomPlayerGame
+    public function testChesscomPlayerGameConstructor(): void
     {
-        $apiModel = new ChesscomPlayerGameApiModel();
-        $apiModel->url = $game->url;
-        $apiModel->pgn = $game->pgn;
-        $apiModel->time_control = $game->time_control;
-        $apiModel->end_time = $game->end_time;
-        $apiModel->rated = $game->rated;
-        $apiModel->accuracies = [
-            'white' => $game->accuracy_white,
-            'black' => $game->accuracy_black
-        ];
-        $apiModel->fen = $game->fen;
-        $apiModel->time_class = $game->time_class;
-        $apiModel->rules = $game->rules;
-        $apiModel->white = [
-            'rating' => $game->white_rating,
-            'result' => $game->white_result,
-            '@id' => $game->white_id,
-            'username' => $game->white_username,
-            'uuid' => $game->white_uuid
-        ];
-        $apiModel->black = [
-            'rating' => $game->black_rating,
-            'result' => $game->black_result,
-            '@id' => $game->black_id,
-            'username' => $game->black_username,
-            'uuid' => $game->black_uuid
-        ];
-        $apiModel->eco = $game->eco;
-        return $apiModel;
+        echo '<br/>TESTING: Probando nuevo patrón ChesscomPlayerGame...';
+        
+        try {
+            // Verificar que la clase existe
+            if (!class_exists('ChesscomPlayerGame')) {
+                echo '<br/>✗ ERROR: Clase ChesscomPlayerGame no existe';
+                return;
+            }
+            echo '<br/>✓ Clase ChesscomPlayerGame existe';
+            
+            // Probar constructor vacío
+            $test = new ChesscomPlayerGame();
+            echo '<br/>✓ Constructor vacío funciona';
+            
+            // Probar métodos de configuración por grupos
+            $test->setDatosGenerales(0, 1, 'https://test.com', '[Event "Test"]')
+                 ->setDatosBlancas('player1', 1500, 'win', 95.5, 'uuid1')
+                 ->setDatosNegras('player2', 1400, 'resigned', 89.2, 'uuid2')
+                 ->setDatosPartida('600', 'rapid', 'chess', 1, 1234567890, 1234567880, 'A00');
+            
+            echo '<br/>✓ Métodos de configuración por grupos funcionan';
+            echo '<br/>✓ Resultado del test: ' . $test;
+            
+            // Validar
+            $errores = $test->validar();
+            if (empty($errores)) {
+                echo '<br/>✓ Validación exitosa';
+            } else {
+                echo '<br/>⚠ Errores de validación: ' . implode(', ', $errores);
+            }
+            
+        } catch (Exception $e) {
+            echo '<br/>ERROR en test: ' . $e->getMessage();
+        } catch (Error $e) {
+            echo '<br/>ERROR FATAL en test: ' . $e->getMessage();
+        }
+    }
+
+    // Método para debug - verificar datos antes de conversión
+    public function debugApiModel(ChesscomPlayerGameApiModel $apiModel): void
+    {
+        echo '<br/>DEBUG - ChesscomPlayerGameApiModel:';
+        echo '<br/>  - participante_id: ' . ($apiModel->participante_id ?? 'NULL');
+        echo '<br/>  - url: ' . ($apiModel->url ?? 'NULL');
+        echo '<br/>  - pgn length: ' . strlen($apiModel->pgn ?? '');
+        echo '<br/>  - white_username: ' . ($apiModel->white_username ?? 'NULL');
+        echo '<br/>  - white_rating: ' . ($apiModel->white_rating ?? 'NULL');
+        echo '<br/>  - white_result: ' . ($apiModel->white_result ?? 'NULL');
+        echo '<br/>  - black_username: ' . ($apiModel->black_username ?? 'NULL');
+        echo '<br/>  - black_rating: ' . ($apiModel->black_rating ?? 'NULL');
+        echo '<br/>  - black_result: ' . ($apiModel->black_result ?? 'NULL');
+        echo '<br/>  - time_control: ' . ($apiModel->time_control ?? 'NULL');
+        echo '<br/>  - time_class: ' . ($apiModel->time_class ?? 'NULL');
+        echo '<br/>  - end_time: ' . ($apiModel->end_time ?? 'NULL');
     }
 }

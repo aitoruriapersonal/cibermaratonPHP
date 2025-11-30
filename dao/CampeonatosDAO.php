@@ -58,7 +58,7 @@ class CampeonatosDAO
         ) : null;
     }
 
-    public function getCampeonatoActivoByTipo(mixed $tipo): array
+    public function getCampeonatoActivoByTipo(string $tipo): array
     {
         $stmt = $this->pdo->prepare("SELECT * FROM campeonatos WHERE tipo_campeonato = ? AND estado = 'activo'");
         $stmt->execute([$tipo]);

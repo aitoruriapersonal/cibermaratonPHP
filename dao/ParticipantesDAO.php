@@ -34,6 +34,7 @@ class ParticipantesDAO
             $row['puntos'],
             $row['estudio_id'],
             $row['club_id'],
+            $row['licencia'],
             $row['estado'],
             $row['terminado'],
             $row['creditos_totales'],
@@ -57,15 +58,26 @@ class ParticipantesDAO
     public function getParticipantesByCampeonato(int $campeonatoId): array
     {
         $stmt = $this->pdo->prepare("
-            SELECT p.id, campeonato_id, p.nombre, nick AS participante, puntos AS partidas, puntos, terminado, p.estado, 
-	            CASE WHEN c.nombre IS NULL THEN CONCAT (ce.nombre_eus, ' / ', ce.nombre_esp) ELSE c.nombre END facultadClub,
+            SELECT p.id, campeonato_id, p.nombre, nick AS participante,
+                CASE
+                    WHEN (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) IS NULL
+                    THEN 0
+                    ELSE (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id)
+                    END partidas,
+                CASE
+                    WHEN (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) IS NULL
+                    THEN p.puntos
+                    ELSE ((SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) * 1000) + p.puntos
+                    END puntos,
+                licencia, terminado, p.estado,
+                CASE WHEN c.nombre IS NULL THEN CONCAT (ce.nombre_eus, ' / ', ce.nombre_esp) ELSE c.nombre END facultadClub,
                 CASE WHEN c.nombre IS NULL THEN 'Universidad / Unibertsitatea' ELSE 'Federado / Federatua' END categoria
             FROM participantes p
             LEFT JOIN clubs c ON club_id = c.id
             LEFT JOIN estudios e ON estudio_id = e.id
             LEFT JOIN centros ce ON ce.id = e.centro_id AND ce.estado = 1
             WHERE p.campeonato_id = ?
-            ORDER BY puntos DESC, estado, p.id ASC, p.nick ASC
+            ORDER BY estado ASC, partidas DESC, puntos DESC, p.nick ASC, p.id ASC
         ");
         $stmt->execute([$campeonatoId]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -91,6 +103,7 @@ class ParticipantesDAO
                 $row['puntos'],
                 $row['estudio_id'],
                 $row['club_id'],
+                $row['licencia'],
                 $row['estado'],
                 $row['terminado'],
                 $row['creditos_totales'],
@@ -105,8 +118,19 @@ class ParticipantesDAO
     public function getParticipantesUniversitariosByCampeonato(int $campeonatoId): array
     {
         $stmt = $this->pdo->prepare("
-            SELECT p.id, campeonato_id, p.nombre, nick AS participante, puntos AS partidas, puntos, terminado, p.estado, 
-	            CONCAT (ce.nombre_eus, ' / ', ce.nombre_esp) AS facultadClub,
+            SELECT p.id, campeonato_id, p.nombre, nick AS participante,
+                CASE
+                    WHEN (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) IS NULL
+                    THEN 0
+                    ELSE (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id)
+                    END partidas,
+                CASE
+                    WHEN (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) IS NULL
+                    THEN p.puntos
+                    ELSE ((SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) * 1000) + p.puntos
+                    END puntos,
+                licencia, terminado, p.estado,
+                CONCAT (ce.nombre_eus, ' / ', ce.nombre_esp) AS facultadClub,
                 'Universidad / Unibertsitatea' AS categoria
             FROM participantes p
             LEFT JOIN estudios e ON estudio_id = e.id
@@ -114,7 +138,7 @@ class ParticipantesDAO
             WHERE p.campeonato_id = ?
             AND p.estudio_id IS NOT NULL
             AND p.club_id IS NULL
-            ORDER BY puntos DESC, estado, p.id ASC, p.nick ASC
+            ORDER BY estado ASC, partidas DESC, puntos DESC, p.nick ASC, p.id ASC
         ");
         $stmt->execute([$campeonatoId]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -123,15 +147,26 @@ class ParticipantesDAO
     public function getParticipantesFederadosByCampeonato(int $campeonatoId): array
     {
         $stmt = $this->pdo->prepare("
-            SELECT p.id, campeonato_id, p.nombre, nick AS participante, puntos AS partidas, puntos, terminado, p.estado, 
-	            c.nombre AS club,
+            SELECT p.id, campeonato_id, p.nombre, nick AS participante, 
+                CASE
+                    WHEN (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) IS NULL
+                    THEN 0
+                    ELSE (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id)
+                    END partidas,
+                CASE
+                    WHEN (SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) IS NULL
+                    THEN p.puntos
+                    ELSE ((SELECT max(numero_partida) FROM resultados r where r.participante_id = p.id) * 1000) + p.puntos
+                    END puntos,
+                licencia, terminado, p.estado,
+                c.nombre AS facultadClub,
                 'Federado / Federatua' AS categoria
             FROM participantes p
             LEFT JOIN clubs c ON club_id = c.id
             WHERE p.campeonato_id = ?
             AND p.estudio_id IS NULL
             AND p.club_id IS NOT NULL
-            ORDER BY puntos DESC, estado, p.id ASC, p.nick ASC
+            ORDER BY estado ASC, partidas DESC, puntos DESC, p.nick ASC, p.id ASC
         ");
         $stmt->execute([$campeonatoId]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -140,37 +175,65 @@ class ParticipantesDAO
     // CREATE
     public function createParticipante(array $data): int
     {
-        $stmt = $this->pdo->prepare("
+        // Asegurar que PDO lanza excepciones (por si no está configurado al crear la conexión)
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        // Normalizar campos entrantes
+        $campeonato_id    = $data['campeonato'] ?? $data['campeonato_id'] ?? null;
+        $nombre           = $data['nombre'] ?? null;
+        $apellidos        = $data['apellidos'] ?? null;
+        $dni              = $data['dni'] ?? null;
+        $genero           = $data['genero'] ?? null;
+        $telefono         = $data['telefono'] ?? null;
+        $email            = $data['email'] ?? null;
+        // 'nacimiento' en el payload -> fecha_nacimiento
+        $fecha_nacimiento = $data['nacimiento'] ?? $data['fecha_nacimiento'] ?? null;
+        $nick             = $data['nick'] ?? null;
+
+        // tratar valores "0" o "" para que sean NULL en la BDD si procede
+        $estudio_id = isset($data['estudios']) ? ((string)$data['estudios'] === '' || (string)$data['estudios'] === '0' ? null : $data['estudios']) : null;
+        $club_id    = isset($data['club']) ? ((string)$data['club'] === '' ? null : $data['club']) : null;
+        $licencia   = isset($data['licencia']) ? ((string)$data['licencia'] === '' ? null : $data['licencia']) : null;
+        $sql = "
             INSERT INTO participantes (
-                campeonato_id, nombre, apellidos, dni, telefono, email, fecha_nacimiento, nick,
-                estudio_id, club_id
+                campeonato_id, nombre, apellidos, dni, genero, telefono, email, fecha_nacimiento, nick,
+                estudio_id, club_id, licencia
             ) VALUES (
-                :campeonato_id, :nombre, :apellidos, :dni, :telefono, :email, :fecha_nacimiento, :nick,
-                :estudio_id, :club_id
+                :campeonato_id, :nombre, :apellidos, :dni, :genero, :telefono, :email, :fecha_nacimiento, :nick,
+                :estudio_id, :club_id, :licencia
             )
-        ");
-        //echo var_dump($data); // Debugging line to check data before insert
-        $stmt->execute([
-            ':campeonato_id'    => $data['campeonato'],
-            ':nombre'           => $data['nombre'],
-            ':apellidos'        => $data['apellidos'],
-            ':dni'              => $data['dni'],
-            ':genero'           => $data['genero'],
-            ':telefono'         => $data['telefono'],
-            ':email'            => $data['email'],
-            ':fecha_nacimiento' => $data['nacimiento'],
-            ':nick'             => $data['nick'],
-            //':puntos'           => $data['puntos'] ?? 0,
-            ':estudio_id'       => $data['estudios'] ?? null,
-            ':club_id'          => $data['club'] ?? null
-            //':estado'           => $data['estado'] ?? 'Sin registro chesscom',
-            //':terminado'        => $data['terminado'] ?? 0,
-            //':creditos_totales' => $data['creditos_totales'] ?? 0,
-            //':fecha_finalizado' => $data['fecha_finalizado'] ?? date('Y-m-d H:i:s'),
-            //':fecha_alta'       => $data['fecha_alta'] ?? date('Y-m-d H:i:s'),
-            //':fecha_modificacion' => $data['fecha_modificacion'] ?? date('Y-m-d H:i:s'),
-        ]);
-        return (int)$this->pdo->lastInsertId();
+        ";
+
+        $stmt = $this->pdo->prepare($sql);
+
+        try {
+            $ok = $stmt->execute([
+                'campeonato_id'    => $campeonato_id,
+                'nombre'           => $nombre,
+                'apellidos'        => $apellidos,
+                'dni'              => $dni,
+                'genero'           => $genero,
+                'telefono'         => $telefono,
+                'email'            => $email,
+                'fecha_nacimiento' => $fecha_nacimiento,
+                'nick'             => $nick,
+                'estudio_id'       => $estudio_id,
+                'club_id'          => $club_id,
+                'licencia'         => $licencia
+            ]);
+
+            if ($ok === false) {
+                $err = $stmt->errorInfo();
+                error_log('createParticipante execute failed: ' . json_encode($err));
+                return 0;
+            }
+
+            return (int)$this->pdo->lastInsertId();
+        } catch (PDOException $e) {
+            // Registrar error real para depuración
+            error_log('createParticipante exception: ' . $e->getMessage() . ' | Data: ' . json_encode($data));
+            return 0;
+        }
     }
 
     public function create(Participante $p): int
@@ -179,18 +242,18 @@ class ParticipantesDAO
             INSERT INTO participantes (
                 campeonato_id, nombre, apellidos, dni, genero,
                 telefono, email, fecha_nacimiento, nick, puntos,
-                estudio_id, club_id, estado, terminado, creditos_totales,
-                fecha_finalizado, fecha_alta, fecha_modificacion
+                estudio_id, club_id, licencia, estado, terminado,
+                creditos_totales, fecha_finalizado, fecha_alta, fecha_modificacion
             ) VALUES (?, ?, ?, ?, ?,
              ?, ?, ?, ?, ?,
              ?, ?, ?, ?, ?,
-             ?, ?, ?)
+             ?, ?, ?, ?)
         ");
         $stmt->execute([
             $p->campeonato_id, $p->nombre,$p->apellidos,$p->dni,$p->genero,
             $p->telefono,$p->email,$p->fecha_nacimiento,$p->nick,$p->puntos,
-            $p->estudio_id,$p->club_id,$p->estado,$p->terminado,$p->creditos_totales,
-            $p->fecha_finalizado,$p->fecha_alta,$p->fecha_modificacion
+            $p->estudio_id,$p->club_id,$p->licencia, $p->estado,$p->terminado,
+            $p->creditos_totales, $p->fecha_finalizado,$p->fecha_alta,$p->fecha_modificacion
         ]);
         return (int)$this->pdo->lastInsertId();
     }
@@ -214,6 +277,7 @@ class ParticipantesDAO
                 $row['puntos'],
                 $row['estudio_id'],
                 $row['club_id'],
+                $row['licencia'],
                 $row['estado'],
                 $row['terminado'],
                 $row['creditos_totales'],
@@ -241,6 +305,7 @@ class ParticipantesDAO
                 puntos = :puntos,
                 estudio_id = :estudio_id,
                 club_id = :club_id,
+                licencia = :licencia,
                 estado = :estado,
                 terminado = :terminado,
                 creditos_totales = :creditos_totales,
@@ -259,6 +324,7 @@ class ParticipantesDAO
             ':puntos'           => $data['puntos'] ?? 0,
             ':estudio_id'       => $data['estudio_id'] ?? null,
             ':club_id'          => $data['club_id'] ?? null,
+            ':licencia'         => $data['licencia'] ?? null,
             ':estado'           => $data['estado'] ?? 'Sin registro chesscom',
             ':terminado'        => $data['terminado'] ?? 0,
             ':creditos_totales' => $data['creditos_totales'] ?? 0,
@@ -280,7 +346,7 @@ class ParticipantesDAO
         $stmt = $this->pdo->prepare("
             UPDATE participantes SET
                 campeonato_id = ?, nombre = ?, apellidos = ?, dni = ?, genero = ?, telefono = ?, email = ?, fecha_nacimiento = ?, nick = ?, puntos = ?,
-                estudio_id = ?, club_id = ?, estado = ?, terminado = ?, creditos_totales = ?, fecha_finalizado = ?, fecha_modificacion = ?
+                estudio_id = ?, club_id = ?, licencia = ?, estado = ?, terminado = ?, creditos_totales = ?, fecha_finalizado = ?, fecha_modificacion = ?
             WHERE id = ?
         ");
         return $stmt->execute([
@@ -296,6 +362,7 @@ class ParticipantesDAO
             $p->puntos,
             $p->estudio_id,
             $p->club_id,
+            $p->licencia,
             $p->estado,
             $p->terminado,
             $p->creditos_totales,
@@ -340,6 +407,7 @@ class ParticipantesDAO
                 $row['puntos'],
                 $row['estudio_id'],
                 $row['club_id'],
+                $row['licencia'],
                 $row['estado'],
                 $row['terminado'],
                 $row['creditos_totales'],
@@ -387,6 +455,7 @@ class ParticipantesDAO
                 $row['puntos'],
                 $row['estudio_id'],
                 $row['club_id'],
+                $row['licencia'],
                 $row['estado'],
                 $row['terminado'],
                 $row['creditos_totales'],

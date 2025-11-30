@@ -1,13 +1,51 @@
 <?php
 // filepath: c:\TodoDesarrollo\proyectos\php\cibermaratonPHP\operativa\cron_insertar_analizar_participantes.php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
 require_once __DIR__ . '/../servicio/ParticipantesService.php';
 require_once __DIR__ . '/../servicio/AnalizarParticipanteService.php';
 require_once __DIR__ . '/../utilidades/LogGestor.php';
 
+$esLocal = false;
 
 // Configuración de conexión PDO (ajusta los datos a tu entorno)
-$pdo = new PDO('mysql:host=localhost;dbname=cibermaraton', 'root', '');
+// Manejo de preflight
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
+// Conexión PDO (ajusta los datos a tu entorno)
+try {
+    if ($esLocal) {
+        $dsn = 'mysql:host=127.0.0.1;dbname=cibermaraton;charset=utf8mb4';
+        $usuario = 'root';
+        $password = '';
+    } else {
+        $dbHost = "db552696640.db.1and1.com";
+        $dbUsuario = "dbo552696640";
+        $dbPass = "Elefante3000";
+        $dbSchema = "db552696640";
+        $dsn = "mysql:host={$dbHost};dbname={$dbSchema};charset=utf8mb4";
+        $usuario = $dbUsuario;
+        $password = $dbPass;
+    }
+
+    $options = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES => false,
+        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4"
+    ];
+
+    $pdo = new PDO($dsn, $usuario, $password, $options);
+} catch (PDOException $e) {
+    error_log('DB connection error: ' . $e->getMessage());
+    http_response_code(500);
+    echo json_encode(['error' => 'Database connection error']);
+    exit;
+}
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Instanciar servicios

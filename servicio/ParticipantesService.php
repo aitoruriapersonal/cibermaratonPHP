@@ -42,6 +42,7 @@ class ParticipantesService
         $nickGenerado = $this->generarNick($data['tipo'], $data['dni'], $data['nombre']);
         $data['nick'] = $nickGenerado;
         $participanteInsertadoId = $this->dao->createParticipante($data);
+        //$participanteInsertadoId = $this->dao->create($data);
         return $this->dao->getParticipanteById($participanteInsertadoId);
     }
 
@@ -72,12 +73,12 @@ class ParticipantesService
 
     /**
      * Genera un nick formateado según las reglas:
-     * - 23UPV para universitarios UPV
+     * - 23EHU para universitarios EHU
      * - 23UNI para otros universitarios
      * - 23FED para federados
      * Luego los primeros 5 dígitos del DNI, el nombre (sin espacios, en CamelCase, sin tildes ni ñ/Ñ), y un número correlativo.
      *
-     * @param string $tipo ('UPV', 'UNI', 'FED')
+     * @param string $tipo ('EHU', 'UNI', 'FED')
      * @param string $dni
      * @param string $nombre
      * @return string

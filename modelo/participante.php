@@ -16,6 +16,7 @@ class Participante
     public int $puntos;
     public ?int $estudio_id;
     public ?int $club_id;
+    public ?string $licencia;
     public string $estado;
     public int $terminado;
     public int $creditos_totales;
@@ -37,6 +38,7 @@ class Participante
         int $puntos = 0,
         ?int $estudio_id = null,
         ?int $club_id = null,
+        ?string $licencia = null,
         string $estado = '4-Sin registro chesscom',
         int $terminado = 0,
         int $creditos_totales = 0,
@@ -57,6 +59,7 @@ class Participante
         $this->puntos = $puntos;
         $this->estudio_id = $estudio_id;
         $this->club_id = $club_id;
+        $this->licencia = $licencia;
         $this->estado = $estado;
         $this->terminado = $terminado;
         $this->creditos_totales = $creditos_totales;
@@ -64,4 +67,7 @@ class Participante
         $this->fecha_alta = $fecha_alta ?? date('Y-m-d H:i:s');
         $this->fecha_modificacion = $fecha_modificacion;
     }
+
+
+
 }
